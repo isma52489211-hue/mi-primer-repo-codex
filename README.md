@@ -1,6 +1,6 @@
 # ISMAEL · IA APLICADA
 
-Web personal de Ismael, empresario que se está especializando en IA aplicada al comercio de alimentación.
+Web personal de Ismael: desarrollo web, aplicaciones de gestión e IA aplicada a pequeños negocios, con experiencia empresarial en el comercio de alimentación.
 
 ## Dirección de la web
 
@@ -8,14 +8,21 @@ https://isma52489211-hue.github.io/mi-primer-repo-codex/
 
 Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
-## Contenido
+## Servicios y portfolio
 
-- Presentación: herramientas prácticas para las compras, las ventas y la revisión de caja.
-- Enfoque: comercio de alimentación, con experiencia en pescaderías, fruterías, carnicerías y supermercados.
-- Proyecto destacado: **Pescadería Contable**, aplicación propia en desarrollo. Preparación de jornada, existencias, compras, registro de ventas, revisión de efectivo y tarjeta, histórico y copia de registros.
-- Sobre mí, preguntas frecuentes y contacto pendiente de un canal real.
+- **Desarrollo web** para profesionales y pequeños negocios.
+- **Aplicaciones de gestión** que parten de necesidades del trabajo diario.
+- **IA y automatizaciones** como línea de aprendizaje y desarrollo, sin atribuir resultados o capacidades no documentadas.
 
-El proyecto se presenta con un esquema explicativo, no con una captura ni una demostración funcional. No se publican ubicaciones ni información de pruebas. No se atribuyen funciones de IA a la aplicación, métricas de resultados ni un cálculo completo del beneficio. El registro de las operaciones es manual.
+Proyectos:
+
+1. **María Flores PNI** — https://mariaflorespni.com/ — creada por Ismael por su cuenta, publicada y operativa según su descripción.
+2. **Pescaderías Adolfo** — https://pescaderiasadolfo.es/ — desarrollada con ayuda de IA, publicada y en mejora según Ismael.
+3. **Pescadería Contable** — aplicación propia en desarrollo: preparación de jornada, existencias, compras, ventas, revisión de efectivo y tarjeta, histórico y copia de registros.
+
+Los dos proyectos web se presentan con texto y enlaces, sin capturas, métricas ni funciones no verificadas. Sus dominios no pudieron inspeccionarse desde este entorno por restricciones de acceso. El texto se basa en lo aportado por Ismael.
+
+La aplicación se presenta con un esquema explicativo, no con una demostración funcional. No se publican ubicaciones ni información de pruebas. El registro de las operaciones es manual; no se atribuyen funciones de IA ni un cálculo completo del beneficio.
 
 ## Scripts
 
@@ -29,4 +36,4 @@ Editar `index.html` y `styles.css`; después ejecutar el script de preparación.
 
 ## Próximas mejoras
 
-Añadir un correo profesional facilitado por Ismael. Incorporar capturas recortadas de la aplicación o una demostración cuando estén disponibles, y documentar resultados solo si se pueden verificar.
+Añadir un correo profesional facilitado por Ismael. Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.
