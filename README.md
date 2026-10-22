@@ -1,24 +1,32 @@
 # ISMAEL · IA APLICADA
 
-Web personal de Ismael, empresario que se está especializando en inteligencia artificial aplicada a pequeños negocios.
+Web personal de Ismael, empresario que se está especializando en IA aplicada al comercio de alimentación.
 
-## Ver la web
+## Dirección de la web
 
-Abre `index.html` en un navegador. No requiere instalación ni compilación.
+https://isma52489211-hue.github.io/mi-primer-repo-codex/
 
-## Publicación y scripts
+Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
-La web se publica con GitHub Pages desde la carpeta `docs` de la rama `main`.
+## Contenido
+
+- Presentación: herramientas prácticas para las compras, las ventas y la revisión de caja.
+- Enfoque: comercio de alimentación, con experiencia en pescaderías, fruterías, carnicerías y supermercados.
+- Proyecto destacado: **Pescadería Contable**, aplicación propia en desarrollo. Preparación de jornada, existencias, compras, registro de ventas, revisión de efectivo y tarjeta, histórico y copia de registros.
+- Sobre mí, preguntas frecuentes y contacto pendiente de un canal real.
+
+El proyecto se presenta con un esquema explicativo, no con una captura ni una demostración funcional. No se publican ubicaciones ni información de pruebas. No se atribuyen funciones de IA a la aplicación, métricas de resultados ni un cálculo completo del beneficio. El registro de las operaciones es manual.
+
+## Scripts
+
+No requiere dependencias ni compilación. Usa fuentes de sistema y no incluye analítica, cookies ni formularios de recogida de datos.
 
 - Preparar y validar: `python3 scripts/build.py`.
-- Ver en tu ordenador: primero prepara la web y ejecuta `python3 scripts/preview.py`; abre `http://localhost:8000`.
-- Subir una actualización: `bash scripts/publish.sh` (requiere acceso Git a este repositorio y permiso para actualizar `main`).
+- Vista previa: `python3 scripts/preview.py`; abrir `http://localhost:8000`.
+- Actualizar GitHub: `bash scripts/publish.sh` (requiere permisos para actualizar `main`).
 
-El script de preparación solo copia HTML y CSS a `docs`; los scripts y otros archivos del repositorio no se incluyen en la web publicada.
+Editar `index.html` y `styles.css`; después ejecutar el script de preparación. Solo `docs/` se sirve como web pública. También puedes abrir `index.html` directamente en tu navegador.
 
-## Archivos
+## Próximas mejoras
 
-- `index.html`: Inicio, Sobre mí, Proyectos y Contacto.
-- `styles.css`: diseño adaptable en negro y morado. Las fuentes de Google son opcionales; hay fuentes de sistema como alternativa.
-
-Los proyectos se presentan como líneas de trabajo, sin casos de éxito inventados. Queda pendiente añadir un canal de contacto real y proyectos documentados.
+Añadir un correo profesional facilitado por Ismael. Incorporar capturas recortadas de la aplicación o una demostración cuando estén disponibles, y documentar resultados solo si se pueden verificar.
