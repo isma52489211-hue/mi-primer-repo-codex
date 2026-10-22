@@ -1,6 +1,6 @@
 # ISMAEL · IA APLICADA
 
-Web personal de Ismael: desarrollo web, aplicaciones de gestión e IA aplicada a pequeños negocios, con experiencia empresarial en el comercio de alimentación.
+Web personal de Ismael: gestión de pequeños negocios, marketing digital y creación de soluciones con apoyo de IA, con experiencia empresarial en el comercio de alimentación.
 
 ## Dirección de la web
 
@@ -10,9 +10,16 @@ Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
 ## Servicios y portfolio
 
-- **Desarrollo web** para profesionales y pequeños negocios.
-- **Aplicaciones de gestión** que parten de necesidades del trabajo diario.
-- **IA y automatizaciones** como línea de aprendizaje y desarrollo, sin atribuir resultados o capacidades no documentadas.
+- **Webs y presencia digital** para profesionales y pequeños negocios.
+- **Marketing y captación**: conectar presencia digital con contacto o una acción comercial.
+- **Contenido y marca**: planificación, creación y revisión con ayuda de herramientas.
+- **Aplicaciones y control**: definir requisitos y desarrollar primeras versiones con apoyo de IA.
+- **IA y automatizaciones**: diseño del comportamiento esperado y formación en curso en LLM, agentes e integraciones.
+- **Criterio de negocio**: valorar utilidad, coste, mantenimiento y operativa antes de ampliar una solución.
+
+La presentación se basa en el perfil aportado por Ismael: experiencia práctica en gestión, marketing y dirección de soluciones digitales con ayuda de IA. Se distingue esa experiencia de la formación técnica en curso. No se atribuye dominio autónomo de programación, arquitectura, ciberseguridad ni integraciones complejas, ni resultados comerciales no documentados.
+
+Se explica el proceso de entender, concretar, construir/probar y evaluar. La experiencia declarada con WordPress, Meta Ads, WhatsApp Business, Google Business Profile, Sites, Antigravity y revisión/despliegue en Vercel se muestra sin niveles de dominio ni certificaciones.
 
 Proyectos:
 
