@@ -63,4 +63,18 @@
     if (!mobile.matches && focused === toggle) nav.querySelector('a').focus();
   });
 
+  // Category links also open the corresponding native disclosure.
+  if (document.body.dataset.page === 'herramientas') {
+    const openToolGroup = (id, focus = false) => {
+      const group = document.getElementById(id);
+      if (!group || !group.classList.contains('tool-group')) return;
+      group.open = true;
+      if (focus) group.querySelector('summary').focus({ preventScroll: true });
+    };
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => openToolGroup(link.hash.slice(1), true));
+    });
+    window.addEventListener('hashchange', () => openToolGroup(window.location.hash.slice(1)));
+    openToolGroup(window.location.hash.slice(1));
+  }
 })();
