@@ -75,6 +75,10 @@ Todo con CSS y JavaScript propios, sin librerías ni recursos externos:
 
 Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. El brillo que sigue al puntero solo se activa con ratón. La fase 1 añadió unos 12 KB sin comprimir.
 
+## Caché del navegador
+
+GitHub Pages permite al navegador guardar los archivos unos minutos. Para que nunca se mezcle un HTML nuevo con un CSS antiguo, `scripts/build.py` añade en `docs/` una huella del contenido a los enlaces (`styles.css?v=…`, `site.js?v=…`): cuando cambian, el navegador los descarga de nuevo. En los HTML de trabajo los enlaces quedan sin huella. Los iconos llevan además `width` y `height` para no agrandarse aunque el CSS no cargue.
+
 ## Código y teclado
 
 Los HTML llevan un salto de línea en cada bloque estructural (`section`, `article`, `nav`, `details`, listas…) para que los cambios se lean bien en GitHub. Se comprobó que el reformateo no alteró nada visible: 21 capturas (7 páginas × 3 tamaños) idénticas píxel a píxel. Al editar, no insertar saltos de línea entre elementos en línea (`<a>`, `<span>`): añadirían espacios visibles.

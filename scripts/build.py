@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+import hashlib
 import shutil
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -60,8 +61,16 @@ def main():
 
     output = ROOT / 'docs'
     output.mkdir(exist_ok=True)
+    # Versioned CSS/JS links: a browser never combines new HTML with a cached old stylesheet.
+    versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:10] for name in ('styles.css', 'site.js')}
     for name in PUBLIC_FILES:
-        shutil.copyfile(ROOT / name, output / name)
+        if name in PAGES:
+            html = (ROOT / name).read_text()
+            html = html.replace('href="styles.css"', f'href="styles.css?v={versions["styles.css"]}"')
+            html = html.replace('src="site.js"', f'src="site.js?v={versions["site.js"]}"')
+            (output / name).write_text(html)
+        else:
+            shutil.copyfile(ROOT / name, output / name)
     (output / '.nojekyll').touch()
 
     # El sitemap se genera con las páginas indexables: así nunca queda desfasado.
