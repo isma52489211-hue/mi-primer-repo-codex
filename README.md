@@ -19,7 +19,21 @@ Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
 La presentación se basa en el perfil aportado por Ismael: experiencia práctica en gestión, marketing y dirección de soluciones digitales con ayuda de IA. Se distingue esa experiencia de la formación técnica en curso. No se atribuye dominio autónomo de programación, arquitectura, ciberseguridad ni integraciones complejas, ni resultados comerciales no documentados.
 
-Se explica el proceso de entender, concretar, construir/probar y evaluar. La experiencia declarada con WordPress, Meta Ads, WhatsApp Business, Google Business Profile, Sites, Antigravity y revisión/despliegue en Vercel se muestra sin niveles de dominio ni certificaciones.
+Se explica el proceso de entender, concretar, construir/probar y evaluar.
+
+## Menú y herramientas
+
+El menú fijo enlaza Inicio, Servicios, Proyectos, Herramientas, Sobre mí, Preguntas y Contacto. En móvil se abre con un botón, se cierra al seleccionar un destino, al tocar fuera o con Escape, y conserva acceso por teclado. Sin JavaScript quedan visibles todos los enlaces. La sección actual se indica en el menú.
+
+Herramientas agrupadas por IA/asistentes, automatización, webs/aplicaciones, marketing y productividad/datos. Se distingue uso habitual o práctico, uso acotado/con apoyo y formación:
+
+- ChatGPT, ChatGPT Work/Codex, Claude: uso práctico o habitual. Gemini: uso personal y formación. Copilot: formación.
+- Make y n8n: formación. Tareas programadas y conectores de ChatGPT: uso práctico.
+- Sites, Antigravity y WordPress: uso práctico. Vercel: con apoyo. GitHub y Hostinger: uso acotado.
+- Meta Ads, Instagram, WhatsApp Business y Google Business Profile: experiencia práctica. Metricool: uso acotado como fuente de métricas.
+- Google Sheets, Gmail y Google Drive: uso práctico o habitual.
+
+Las clasificaciones proceden de lo aportado por Ismael. Las herramientas solo investigadas o presentes en cursos quedan fuera de la lista de manejo. Agentes, API y MCP se presentan como conceptos y tecnologías en aprendizaje. No se atribuye dominio de Next.js, Tailwind o GSAP.
 
 Proyectos:
 
@@ -33,13 +47,13 @@ La aplicación se presenta con un esquema explicativo, no con una demostración 
 
 ## Scripts
 
-No requiere dependencias ni compilación. Usa fuentes de sistema y no incluye analítica, cookies ni formularios de recogida de datos.
+No requiere dependencias ni compilación. `site.js` gestiona únicamente el menú y la sección activa. Usa fuentes de sistema y no incluye analítica, cookies ni formularios de recogida de datos.
 
 - Preparar y validar: `python3 scripts/build.py`.
 - Vista previa: `python3 scripts/preview.py`; abrir `http://localhost:8000`.
 - Actualizar GitHub: `bash scripts/publish.sh` (requiere permisos para actualizar `main`).
 
-Editar `index.html` y `styles.css`; después ejecutar el script de preparación. Solo `docs/` se sirve como web pública. También puedes abrir `index.html` directamente en tu navegador.
+Editar `index.html`, `styles.css` y `site.js`; después ejecutar el script de preparación. Solo `docs/` se sirve como web pública. También puedes abrir `index.html` directamente en tu navegador.
 
 ## Próximas mejoras
 

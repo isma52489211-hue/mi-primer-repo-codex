@@ -28,7 +28,7 @@ def main():
             raise ValueError(f'Enlace interno roto: {link}')
     output = ROOT / 'docs'
     output.mkdir(exist_ok=True)
-    for name in ('index.html', 'styles.css'):
+    for name in ('index.html', 'styles.css', 'site.js'):
         shutil.copyfile(ROOT / name, output / name)
     (output / '.nojekyll').touch()
     print('Web validada y preparada en docs/')
