@@ -66,6 +66,8 @@ Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya present
 
 Ningún texto de la web baja de 12 px (antes había etiquetas de 9 a 11 px). Si se añade CSS nuevo, mantener ese mínimo.
 
+En pantallas táctiles y en móvil (`pointer:coarse` o menos de 760 px) los enlaces y botones independientes miden al menos 44 px de alto. Los enlaces dentro de un párrafo quedan como están.
+
 ## Aviso legal y privacidad
 
 `aviso-legal.html` reúne los datos del titular exigidos por el artículo 10 de la LSSI, las condiciones de uso, la política de privacidad de los contactos por correo, WhatsApp y teléfono, y la información sobre cookies y alojamiento en GitHub Pages. Se enlaza desde el pie de todas las páginas y no se indexa en buscadores.
