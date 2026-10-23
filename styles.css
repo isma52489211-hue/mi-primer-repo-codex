@@ -103,3 +103,15 @@ main .section h2:not(:is(.contact-channel,.service-detail,.portfolio-case,.featu
 @media(prefers-reduced-motion:no-preference){.orbit-ring{transform-box:view-box;transform-origin:120px 120px;animation:orbit 20s linear infinite}.orbit-2{animation-duration:32s;animation-direction:reverse}.orbit-3{animation-duration:46s}}
 @keyframes orbit{to{rotate:360deg}}
 @supports(animation-timeline:view()){@media(prefers-reduced-motion:no-preference){.bento-tile{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% entry 240px}.bento-tile:nth-child(even){animation-range:entry 40px entry 280px}}}
+/* ===== Fase 2: foto de Ismael ===== */
+.about-intro{grid-template-areas:"copy portrait" "statement portrait";align-items:start}
+.about-intro-copy{grid-area:copy}.about-statement{grid-area:statement;align-self:start}
+.about-portrait{grid-area:portrait;position:relative;margin:0;border:1px solid #4b375f;border-radius:18px;overflow:hidden;background:#18141e;align-self:start}
+.about-portrait img{display:block;width:100%;height:auto}
+.about-portrait::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,#101014f0 0%,#10101466 22%,transparent 45%),linear-gradient(200deg,#b497ff26,transparent 40%)}
+.about-portrait figcaption{position:absolute;z-index:1;left:24px;right:24px;bottom:20px;display:flex;flex-direction:column;gap:2px}
+.about-portrait figcaption strong{font-size:26px;letter-spacing:-.8px;font-weight:650}
+.about-portrait figcaption span{font-size:12px;letter-spacing:1.8px;color:#d4cbe0;text-transform:uppercase}
+.home-note .note-top{justify-content:flex-start;gap:14px}
+.note-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid #b497ff73;box-shadow:0 0 0 4px #b497ff1a;flex:none}
+@media(max-width:760px){.about-intro{grid-template-areas:"copy" "portrait" "statement"}.about-portrait figcaption strong{font-size:23px}}
