@@ -62,6 +62,22 @@ Inicio se ha desarrollado como una portada breve con cuatro bloques: presentaci�
 
 Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya presenta contexto, aportación y estado de los tres trabajos, accesos rápidos, enlaces a las webs publicadas y el funcionamiento de Pescadería Contable. La presentación se basa en lo aportado por Ismael: no añade métricas, testimonios, capturas ni funciones no comprobadas. Herramientas se ha desarrollado con explicación de niveles, accesos a las cinco categorías, usos prácticos y formación en curso. Las 23 fichas y sus niveles se conservan; los enlaces de categorías abren su grupo y admiten acceso directo por fragmento. Sobre mí ya desarrolla la experiencia de negocio, el trabajo en marketing, los criterios de utilidad y coste y la formación técnica en curso, con enlaces a proyectos y herramientas. No añade fechas, cargos, estudios ni una imagen personal no facilitados. Contacto ya ofrece correo, WhatsApp y llamada con los datos facilitados expresamente por Ismael. El número se presenta con prefijo español +34. Los enlaces preparan el contacto; la web no envía mensajes ni almacena datos. Las seis páginas están desarrolladas. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
+## Legibilidad
+
+Ningún texto de la web baja de 12 px (antes había etiquetas de 9 a 11 px). Si se añade CSS nuevo, mantener ese mínimo.
+
+## Aviso legal y privacidad
+
+`aviso-legal.html` reúne los datos del titular exigidos por el artículo 10 de la LSSI, las condiciones de uso, la política de privacidad de los contactos por correo, WhatsApp y teléfono, y la información sobre cookies y alojamiento en GitHub Pages. Se enlaza desde el pie de todas las páginas y no se indexa en buscadores.
+
+Los datos del titular (nombre, NIF y domicilio) están completados con los facilitados por Ismael, como autónomo. `scripts/build.py` se detiene si en alguna página queda un marcador `PENDIENTE`, para no publicar nunca información incompleta. El texto es una base general: conviene que lo revise un asesor.
+
+## Identidad y vista previa al compartir
+
+Marca mínima, sin manual de marca: paleta `#101014` (fondo), `#b497ff` (morado) y `#f4f2f8` (texto), tipografía del sistema y el punto morado del logotipo "ISMAEL · IA APLICADA". El icono es una "I" blanca con ese punto morado (`favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`). `og-image.png` (1200×630) es la tarjeta que aparece al compartir el enlace en WhatsApp, LinkedIn y otras redes.
+
+Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección de GitHub Pages. **Si la web cambia de dirección (por ejemplo, a un dominio propio), hay que actualizar esas URL absolutas** en los siete HTML. Las redes sociales guardan en caché la tarjeta: tras cambiarla, hay que volver a analizar el enlace en sus depuradores.
+
 ## Próximas mejoras
 
 Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.
