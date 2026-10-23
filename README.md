@@ -62,6 +62,12 @@ Inicio se ha desarrollado como una portada breve con cuatro bloques: presentaci�
 
 Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya presenta contexto, aportación y estado de los tres trabajos, accesos rápidos, enlaces a las webs publicadas y el funcionamiento de Pescadería Contable. La presentación se basa en lo aportado por Ismael: no añade métricas, testimonios, capturas ni funciones no comprobadas. Herramientas se ha desarrollado con explicación de niveles, accesos a las cinco categorías, usos prácticos y formación en curso. Las 23 fichas y sus niveles se conservan; los enlaces de categorías abren su grupo y admiten acceso directo por fragmento. Sobre mí ya desarrolla la experiencia de negocio, el trabajo en marketing, los criterios de utilidad y coste y la formación técnica en curso, con enlaces a proyectos y herramientas. No añade fechas, cargos, estudios ni una imagen personal no facilitados. Contacto ya ofrece correo, WhatsApp y llamada con los datos facilitados expresamente por Ismael. El número se presenta con prefijo español +34. Los enlaces preparan el contacto; la web no envía mensajes ni almacena datos. Las seis páginas están desarrolladas. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
+## Aviso legal y privacidad
+
+`aviso-legal.html` reúne los datos del titular exigidos por el artículo 10 de la LSSI, las condiciones de uso, la política de privacidad de los contactos por correo, WhatsApp y teléfono, y la información sobre cookies y alojamiento en GitHub Pages. Se enlaza desde el pie de todas las páginas y no se indexa en buscadores.
+
+Los datos que solo puede facilitar Ismael (nombre y apellidos, NIF, domicilio y fecha) están marcados como `PENDIENTE`. `scripts/build.py` se detiene mientras quede alguno, así que la web no puede publicarse con la página incompleta. El texto es una base general: conviene que lo revise un asesor.
+
 ## Próximas mejoras
 
 Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.

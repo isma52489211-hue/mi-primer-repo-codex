@@ -5,7 +5,7 @@ from urllib.parse import unquote, urlsplit
 import shutil
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = ('index.html', 'servicios.html', 'proyectos.html', 'herramientas.html', 'sobre-mi.html', 'contacto.html')
+PAGES = ('index.html', 'servicios.html', 'proyectos.html', 'herramientas.html', 'sobre-mi.html', 'contacto.html', 'aviso-legal.html')
 PUBLIC_FILES = (*PAGES, 'styles.css', 'site.js')
 
 class Page(HTMLParser):
@@ -14,6 +14,10 @@ class Page(HTMLParser):
         self.ids = []
         self.references = []
         self.headings = 0
+        self.text = ''
+
+    def handle_data(self, data):
+        self.text += data
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -35,6 +39,8 @@ def main():
             raise ValueError(f'{name}: identificadores duplicados')
         if page.headings != 1:
             raise ValueError(f'{name}: debe haber un título principal')
+        if 'PENDIENTE' in page.text:
+            raise ValueError(f'{name}: quedan datos PENDIENTES; complétalos antes de publicar')
         parsed[name] = page
 
     for name, page in parsed.items():
