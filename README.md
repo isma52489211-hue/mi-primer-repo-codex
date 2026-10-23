@@ -10,12 +10,13 @@ Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
 ## Servicios y portfolio
 
-- **Webs y presencia digital** para profesionales y pequeños negocios.
-- **Marketing y captación**: conectar presencia digital con contacto o una acción comercial.
-- **Contenido y marca**: planificación, creación y revisión con ayuda de herramientas.
-- **Aplicaciones y control**: definir requisitos y desarrollar primeras versiones con apoyo de IA.
-- **IA y automatizaciones**: diseño del comportamiento esperado y formación en curso en LLM, agentes e integraciones.
-- **Criterio de negocio**: valorar utilidad, coste, mantenimiento y operativa antes de ampliar una solución.
+La página de Servicios desarrolla tres áreas:
+
+- **Presencia digital y captación**: webs, marketing y contenido de marca, con enlaces a María Flores PNI y Pescaderías Adolfo.
+- **Aplicaciones y control del negocio**: definición de requisitos, primeras versiones con IA y validación en la operativa, con Pescadería Contable como proyecto en desarrollo.
+- **IA y automatizaciones**: definición de tareas y pruebas acotadas; agentes, Make, n8n e integraciones se mantienen como formación en curso.
+
+Cada área explica la necesidad, qué puede aportar Ismael y cómo se revisaría el resultado. Incluye acceso rápido a cada área, proceso de trabajo, preguntas frecuentes sobre alcance y pruebas, y cierre hacia Contacto. Los ejemplos de necesidades son ilustrativos. No se publican precios, métricas ni garantías de resultados. El canal de contacto sigue pendiente de un dato real facilitado por Ismael.
 
 La presentación se basa en el perfil aportado por Ismael: experiencia práctica en gestión, marketing y dirección de soluciones digitales con ayuda de IA. Se distingue esa experiencia de la formación técnica en curso. No se atribuye dominio autónomo de programación, arquitectura, ciberseguridad ni integraciones complejas, ni resultados comerciales no documentados.
 
@@ -59,7 +60,7 @@ Editar los archivos HTML correspondientes, `styles.css` y `site.js`; después ej
 
 Inicio se ha desarrollado como una portada breve con cuatro bloques: presentación, tres áreas de ayuda, resumen de los tres proyectos y cierre hacia Contacto. El detalle de las otras páginas se ha trasladado desde la web anterior, sin ampliar sus servicios ni atribuir nuevos resultados.
 
-El siguiente paso acordado es trabajar Servicios y continuar una página cada vez. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
+Servicios se ha desarrollado con las tres áreas acordadas. El siguiente paso es trabajar Proyectos y continuar una página cada vez. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
 ## Próximas mejoras
 
