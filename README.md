@@ -80,6 +80,12 @@ Marca mínima, sin manual de marca: paleta `#101014` (fondo), `#b497ff` (morado)
 
 Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección de GitHub Pages. **Si la web cambia de dirección (por ejemplo, a un dominio propio), hay que actualizar esas URL absolutas** en los siete HTML. Las redes sociales guardan en caché la tarjeta: tras cambiarla, hay que volver a analizar el enlace en sus depuradores.
 
+## Buscadores
+
+`scripts/build.py` genera `docs/sitemap.xml` con las páginas indexables (todas menos el aviso legal, que lleva `noindex`), así que no hay que mantenerlo a mano.
+
+No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del dominio (`isma52489211-hue.github.io/robots.txt`) y esta web vive en la subcarpeta `/mi-primer-repo-codex/`, así que un archivo aquí no tendría ningún efecto. Si algún día la web pasa a un dominio propio, ya se podrá añadir. Para que Google encuentre el sitemap hay que enviarlo desde Google Search Console.
+
 ## Próximas mejoras
 
 Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.
