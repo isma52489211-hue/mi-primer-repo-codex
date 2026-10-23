@@ -86,4 +86,31 @@
     window.addEventListener('hashchange', () => openToolGroup(window.location.hash.slice(1)));
     openToolGroup(window.location.hash.slice(1));
   }
+
+  // Glow that follows the pointer on cards and on the home background (mouse only, motion allowed).
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (finePointer.matches && !reducedMotion.matches) {
+    const home = document.body.dataset.page === 'inicio' ? document.querySelector('main') : null;
+    let frame = 0;
+    let last = null;
+    document.addEventListener('pointermove', event => {
+      last = event;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const card = last.target.closest('.glow-card');
+        if (card) {
+          const box = card.getBoundingClientRect();
+          card.style.setProperty('--mx', `${last.clientX - box.left}px`);
+          card.style.setProperty('--my', `${last.clientY - box.top}px`);
+        }
+        if (home) {
+          const box = home.getBoundingClientRect();
+          home.style.setProperty('--hx', `${last.clientX - box.left}px`);
+          home.style.setProperty('--hy', `${last.clientY - box.top}px`);
+        }
+      });
+    }, { passive: true });
+  }
 })();

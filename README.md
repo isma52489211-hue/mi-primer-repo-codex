@@ -62,6 +62,19 @@ Inicio se ha desarrollado como una portada breve con cuatro bloques: presentaci�
 
 Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya presenta contexto, aportación y estado de los tres trabajos, accesos rápidos, enlaces a las webs publicadas y el funcionamiento de Pescadería Contable. La presentación se basa en lo aportado por Ismael: no añade métricas, testimonios, capturas ni funciones no comprobadas. Herramientas se ha desarrollado con explicación de niveles, accesos a las cinco categorías, usos prácticos y formación en curso. Las 18 fichas conservan sus niveles (dentro de cada grupo, primero el uso práctico y después la formación); los enlaces de categorías abren su grupo y admiten acceso directo por fragmento. Sobre mí ya desarrolla la experiencia de negocio, el trabajo en marketing, los criterios de utilidad y coste y la formación técnica en curso, con enlaces a proyectos y herramientas. No añade fechas, cargos ni una imagen personal no facilitados. La formación se presenta como "terminando el máster en IA de BIG school", sin añadir titulación ni universidad asociada: cuando Ismael lo termine y pueda acreditarlo, se podrá actualizar con el título real. Hasta entonces no debe afirmarse que ya lo tiene. Contacto ya ofrece correo, WhatsApp y llamada con los datos facilitados expresamente por Ismael. El número se presenta con prefijo español +34. Los enlaces preparan el contacto; la web no envía mensajes ni almacena datos. Las seis páginas están desarrolladas. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
+## Diseño visual (fase 1)
+
+Todo con CSS y JavaScript propios, sin librerías ni recursos externos:
+
+- **Transiciones entre páginas** (`@view-transition`): el contenido se funde al cambiar de página y la cabecera se mantiene. En navegadores que no lo admiten, la navegación es normal.
+- **Revelado al hacer scroll** (`animation-timeline: view()`): títulos, tarjetas y pasos aparecen al entrar en pantalla y quedan opacos del todo tras recorrer 240 px, sea cual sea su altura. Sin soporte, todo se ve desde el principio.
+- **Fondo vivo en Inicio**: aurora morada que se mueve despacio y un brillo que sigue al ratón.
+- **Punto de marca animado** en el logotipo, la etiqueta de la portada y los estados.
+- **Tarjetas con brillo** (`glow-card`): al pasar el ratón se elevan y un foco de luz sigue al puntero.
+- **Iconos** de [Lucide](https://lucide.dev) (licencia ISC, aviso en `LICENSE-lucide.txt`, publicado junto a la web), integrados en el HTML.
+
+Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. El brillo que sigue al puntero solo se activa con ratón. La fase 1 añadió unos 12 KB sin comprimir.
+
 ## Código y teclado
 
 Los HTML llevan un salto de línea en cada bloque estructural (`section`, `article`, `nav`, `details`, listas…) para que los cambios se lean bien en GitHub. Se comprobó que el reformateo no alteró nada visible: 21 capturas (7 páginas × 3 tamaños) idénticas píxel a píxel. Al editar, no insertar saltos de línea entre elementos en línea (`<a>`, `<span>`): añadirían espacios visibles.
@@ -91,6 +104,12 @@ Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección d
 `scripts/build.py` genera `docs/sitemap.xml` con las páginas indexables (todas menos el aviso legal, que lleva `noindex`), así que no hay que mantenerlo a mano.
 
 No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del dominio (`isma52489211-hue.github.io/robots.txt`) y esta web vive en la subcarpeta `/mi-primer-repo-codex/`, así que un archivo aquí no tendría ningún efecto. Si algún día la web pasa a un dominio propio, ya se podrá añadir. Para que Google encuentre el sitemap hay que enviarlo desde Google Search Console.
+
+## Pendientes acordados
+
+1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
+2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
+3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Pendiente fase 2 (tipografía propia, portada tipo bento, foto de Ismael) y fase 3 (capturas reales de los proyectos en maquetas y vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
 
 ## Próximas mejoras
 
