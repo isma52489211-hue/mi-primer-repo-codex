@@ -8,7 +8,7 @@ import shutil
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = ('index.html', 'servicios.html', 'proyectos.html', 'herramientas.html', 'sobre-mi.html', 'contacto.html', 'aviso-legal.html')
 SITE = 'https://isma52489211-hue.github.io/mi-primer-repo-codex/'
-ASSETS = ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'og-image.png', 'LICENSE-lucide.txt', 'geist.woff2', 'LICENSE-geist.txt')
+ASSETS = ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'og-image.png', 'LICENSE-lucide.txt', 'geist.woff2', 'LICENSE-geist.txt', 'ismael-720.webp', 'ismael-480.webp', 'ismael-avatar.webp')
 PUBLIC_FILES = (*PAGES, 'styles.css', 'site.js', *ASSETS)
 
 class Page(HTMLParser):
@@ -28,7 +28,7 @@ class Page(HTMLParser):
             self.ids.append(attrs['id'])
         if tag == 'h1':
             self.headings += 1
-        attribute = 'href' if tag in ('a', 'link') else 'src' if tag == 'script' else None
+        attribute = 'href' if tag in ('a', 'link') else 'src' if tag in ('script', 'img') else None
         if attribute and attribute in attrs:
             self.references.append(attrs[attribute])
 
