@@ -68,6 +68,12 @@ Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya present
 
 Los datos del titular (nombre, NIF y domicilio) están completados con los facilitados por Ismael, como autónomo. `scripts/build.py` se detiene si en alguna página queda un marcador `PENDIENTE`, para no publicar nunca información incompleta. El texto es una base general: conviene que lo revise un asesor.
 
+## Identidad y vista previa al compartir
+
+Marca mínima, sin manual de marca: paleta `#101014` (fondo), `#b497ff` (morado) y `#f4f2f8` (texto), tipografía del sistema y el punto morado del logotipo "ISMAEL · IA APLICADA". El icono es una "I" blanca con ese punto morado (`favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`). `og-image.png` (1200×630) es la tarjeta que aparece al compartir el enlace en WhatsApp, LinkedIn y otras redes.
+
+Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección de GitHub Pages. **Si la web cambia de dirección (por ejemplo, a un dominio propio), hay que actualizar esas URL absolutas** en los siete HTML. Las redes sociales guardan en caché la tarjeta: tras cambiarla, hay que volver a analizar el enlace en sus depuradores.
+
 ## Próximas mejoras
 
 Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.

@@ -6,7 +6,8 @@ import shutil
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = ('index.html', 'servicios.html', 'proyectos.html', 'herramientas.html', 'sobre-mi.html', 'contacto.html', 'aviso-legal.html')
-PUBLIC_FILES = (*PAGES, 'styles.css', 'site.js')
+ASSETS = ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'og-image.png')
+PUBLIC_FILES = (*PAGES, 'styles.css', 'site.js', *ASSETS)
 
 class Page(HTMLParser):
     def __init__(self):
