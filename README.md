@@ -92,6 +92,12 @@ Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección d
 
 No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del dominio (`isma52489211-hue.github.io/robots.txt`) y esta web vive en la subcarpeta `/mi-primer-repo-codex/`, así que un archivo aquí no tendría ningún efecto. Si algún día la web pasa a un dominio propio, ya se podrá añadir. Para que Google encuentre el sitemap hay que enviarlo desde Google Search Console.
 
+## Pendientes acordados
+
+1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
+2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
+3. **Mejoras visuales** (en curso): iconos, fotografía propia, capturas reales de los proyectos, fondos y tarjetas. Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
+
 ## Próximas mejoras
 
 Incorporar capturas o una demostración cuando estén disponibles y documentar resultados solo si se pueden verificar.
