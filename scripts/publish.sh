@@ -7,5 +7,12 @@ git add -- index.html servicios.html proyectos.html herramientas.html sobre-mi.h
 if ! git diff --cached --quiet; then
   git commit -m "Actualizar web de Ismael IA Aplicada"
 fi
-git push origin HEAD:main
-echo "Archivos publicados. GitHub Pages actualizará la web si está habilitado para main /docs."
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch" = "main" ]; then
+  git push origin main
+  echo "Archivos publicados. GitHub Pages actualizará la web (main, carpeta docs) en uno o dos minutos."
+else
+  # Fuera de main no se publica directamente: se sube la rama y se une con una solicitud de cambios.
+  git push -u origin "$branch"
+  echo "Rama $branch subida. La web NO se ha actualizado: abre una solicitud de cambios (pull request) hacia main y únela para publicar."
+fi

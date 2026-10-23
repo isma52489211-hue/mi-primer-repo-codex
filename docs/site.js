@@ -72,7 +72,16 @@
       if (focus) group.querySelector('summary').focus({ preventScroll: true });
     };
     document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', () => openToolGroup(link.hash.slice(1), true));
+      link.addEventListener('click', event => {
+        const group = document.getElementById(link.hash.slice(1));
+        if (!group || !group.classList.contains('tool-group')) return;
+        // Sin preventDefault, el salto al ancla le quita el foco al resumen.
+        event.preventDefault();
+        history.pushState(null, '', link.hash);
+        openToolGroup(group.id);
+        group.scrollIntoView();
+        group.querySelector('summary').focus({ preventScroll: true });
+      });
     });
     window.addEventListener('hashchange', () => openToolGroup(window.location.hash.slice(1)));
     openToolGroup(window.location.hash.slice(1));
