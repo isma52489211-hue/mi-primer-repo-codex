@@ -23,7 +23,7 @@ Se explica el proceso de entender, concretar, construir/probar y evaluar.
 
 ## Menú y herramientas
 
-El menú fijo enlaza Inicio, Servicios, Proyectos, Herramientas, Sobre mí, Preguntas y Contacto. En móvil se abre con un botón, se cierra al seleccionar un destino, al tocar fuera o con Escape, y conserva acceso por teclado. Sin JavaScript quedan visibles todos los enlaces. La sección actual se indica en el menú.
+La web tiene seis páginas independientes: Inicio (`index.html`), Servicios (`servicios.html`), Proyectos (`proyectos.html`), Herramientas (`herramientas.html`), Sobre mí (`sobre-mi.html`) y Contacto (`contacto.html`). El menú fijo enlaza esas páginas. Las preguntas frecuentes están en Servicios y Proyectos. En móvil se abre con un botón, se cierra al seleccionar un destino, al tocar fuera o con Escape, y conserva acceso por teclado. Sin JavaScript quedan visibles todos los enlaces. La página actual se indica en el menú, también sin JavaScript. Los enlaces antiguos compartidos con fragmentos desde Inicio se redirigen a su nueva página.
 
 Herramientas agrupadas por IA/asistentes, automatización, webs/aplicaciones, marketing y productividad/datos. Se distingue uso habitual o práctico, uso acotado/con apoyo y formación:
 
@@ -47,13 +47,19 @@ La aplicación se presenta con un esquema explicativo, no con una demostración 
 
 ## Scripts
 
-No requiere dependencias ni compilación. `site.js` gestiona únicamente el menú y la sección activa. Usa fuentes de sistema y no incluye analítica, cookies ni formularios de recogida de datos.
+No requiere dependencias ni compilación. `site.js` gestiona el menú móvil y la compatibilidad con enlaces antiguos. Usa fuentes de sistema y no incluye analítica, cookies ni formularios de recogida de datos.
 
 - Preparar y validar: `python3 scripts/build.py`.
 - Vista previa: `python3 scripts/preview.py`; abrir `http://localhost:8000`.
 - Actualizar GitHub: `bash scripts/publish.sh` (requiere permisos para actualizar `main`).
 
-Editar `index.html`, `styles.css` y `site.js`; después ejecutar el script de preparación. Solo `docs/` se sirve como web pública. También puedes abrir `index.html` directamente en tu navegador.
+Editar los archivos HTML correspondientes, `styles.css` y `site.js`; después ejecutar el script de preparación. El script comprueba las seis páginas, los recursos y los destinos de enlaces antes de copiar los archivos públicos. Solo `docs/` se sirve como web pública. También puedes abrir `index.html` directamente en tu navegador.
+
+## Desarrollo por etapas
+
+Inicio se ha desarrollado como una portada breve con cuatro bloques: presentación, tres áreas de ayuda, resumen de los tres proyectos y cierre hacia Contacto. El detalle de las otras páginas se ha trasladado desde la web anterior, sin ampliar sus servicios ni atribuir nuevos resultados.
+
+El siguiente paso acordado es trabajar Servicios y continuar una página cada vez. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
 ## Próximas mejoras
 

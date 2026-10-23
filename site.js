@@ -1,4 +1,19 @@
 (() => {
+  // Preserve links shared before the site was split into separate pages.
+  if (document.body.dataset.page === 'inicio') {
+    const legacy = {
+      servicios: 'servicios.html', metodo: 'servicios.html#metodo',
+      proyectos: 'proyectos.html', webs: 'proyectos.html#webs',
+      pescaderia: 'proyectos.html#pescaderia', 'como-funciona': 'proyectos.html#como-funciona',
+      herramientas: 'herramientas.html', 'sobre-mi': 'sobre-mi.html',
+      preguntas: 'servicios.html#preguntas', 'preguntas-titulo': 'servicios.html#preguntas', contacto: 'contacto.html'
+    };
+    const destination = legacy[window.location.hash.slice(1)];
+    if (destination) {
+      window.location.replace(new URL(destination, window.location.href));
+      return;
+    }
+  }
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('#main-nav');
@@ -20,7 +35,7 @@
   });
 
   nav.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#"]');
+    const link = event.target.closest('a');
     if (!link || !mobile.matches) return;
     setOpen(false);
     const destination = document.getElementById(link.hash.slice(1));
@@ -48,31 +63,4 @@
     if (!mobile.matches && focused === toggle) nav.querySelector('a').focus();
   });
 
-  const links = Array.from(nav.querySelectorAll('a[href^="#"]'));
-  const sections = links.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);
-  const markCurrent = id => {
-    links.forEach(link => {
-      if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
-  };
-  const syncCurrent = () => {
-    const threshold = header.getBoundingClientRect().height + 70;
-    let current = sections[0];
-    for (const section of sections) {
-      if (section.getBoundingClientRect().top <= threshold) current = section;
-    }
-    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
-      current = sections[sections.length - 1];
-    }
-    if (current) markCurrent(current.id);
-  };
-  let scheduled = false;
-  window.addEventListener('scroll', () => {
-    if (scheduled) return;
-    scheduled = true;
-    window.requestAnimationFrame(() => { syncCurrent(); scheduled = false; });
-  }, { passive: true });
-  window.addEventListener('resize', syncCurrent);
-  syncCurrent();
 })();
