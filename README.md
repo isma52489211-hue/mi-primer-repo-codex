@@ -66,7 +66,7 @@ Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya present
 
 `aviso-legal.html` reúne los datos del titular exigidos por el artículo 10 de la LSSI, las condiciones de uso, la política de privacidad de los contactos por correo, WhatsApp y teléfono, y la información sobre cookies y alojamiento en GitHub Pages. Se enlaza desde el pie de todas las páginas y no se indexa en buscadores.
 
-Los datos que solo puede facilitar Ismael (nombre y apellidos, NIF, domicilio y fecha) están marcados como `PENDIENTE`. `scripts/build.py` se detiene mientras quede alguno, así que la web no puede publicarse con la página incompleta. El texto es una base general: conviene que lo revise un asesor.
+Los datos del titular (nombre, NIF y domicilio) están completados con los facilitados por Ismael, como autónomo. `scripts/build.py` se detiene si en alguna página queda un marcador `PENDIENTE`, para no publicar nunca información incompleta. El texto es una base general: conviene que lo revise un asesor.
 
 ## Próximas mejoras
 
