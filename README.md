@@ -60,7 +60,7 @@ Editar los archivos HTML correspondientes, `styles.css` y `site.js`; después ej
 
 Inicio se ha desarrollado como una portada breve con cuatro bloques: presentación, tres áreas de ayuda, resumen de los tres proyectos y cierre hacia Contacto. El detalle de las otras páginas se ha trasladado desde la web anterior, sin ampliar sus servicios ni atribuir nuevos resultados.
 
-Servicios se ha desarrollado con las tres áreas acordadas. El siguiente paso es trabajar Proyectos y continuar una página cada vez. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
+Servicios se ha desarrollado con las tres áreas acordadas. Proyectos ya presenta contexto, aportación y estado de los tres trabajos, accesos rápidos, enlaces a las webs publicadas y el funcionamiento de Pescadería Contable. La presentación se basa en lo aportado por Ismael: no añade métricas, testimonios, capturas ni funciones no comprobadas. El siguiente paso es trabajar Herramientas y continuar una página cada vez. No volver a reunir todo el contenido en Inicio. Mantener negro y morado, el perfil honesto, los proyectos y los niveles de experiencia ya acordados.
 
 ## Próximas mejoras
 
