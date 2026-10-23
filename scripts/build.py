@@ -8,7 +8,7 @@ import shutil
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = ('index.html', 'servicios.html', 'proyectos.html', 'herramientas.html', 'sobre-mi.html', 'contacto.html', 'aviso-legal.html')
 SITE = 'https://isma52489211-hue.github.io/mi-primer-repo-codex/'
-ASSETS = ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'og-image.png', 'LICENSE-lucide.txt')
+ASSETS = ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'og-image.png', 'LICENSE-lucide.txt', 'geist.woff2', 'LICENSE-geist.txt')
 PUBLIC_FILES = (*PAGES, 'styles.css', 'site.js', *ASSETS)
 
 class Page(HTMLParser):

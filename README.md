@@ -75,6 +75,12 @@ Todo con CSS y JavaScript propios, sin librerías ni recursos externos:
 
 Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. El brillo que sigue al puntero solo se activa con ratón. La fase 1 añadió unos 12 KB sin comprimir.
 
+## Diseño visual (fase 2)
+
+- **Tipografía Geist** (de Vercel, licencia SIL OFL 1.1, aviso en `LICENSE-geist.txt`), alojada en la propia web (`geist.woff2`, solo caracteres latinos, 29 KB) y precargada en cada página. No se usa Google Fonts.
+- **Portada tipo bento**: "Cómo puedo ayudarte" es una cuadrícula de bloques de distintos tamaños: IA aplicada (bloque grande con una animación de órbitas alrededor de la marca), presencia digital, gestión, formación (máster en IA de BIG school, en curso), herramientas con uso real y método de trabajo. Todo el contenido procede de las otras páginas.
+- Pendiente de la fase 2: la foto de Ismael, cuando la facilite.
+
 ## Caché del navegador
 
 GitHub Pages permite al navegador guardar los archivos unos minutos. Para que nunca se mezcle un HTML nuevo con un CSS antiguo, `scripts/build.py` añade en `docs/` una huella del contenido a los enlaces (`styles.css?v=…`, `site.js?v=…`): cuando cambian, el navegador los descarga de nuevo. En los HTML de trabajo los enlaces quedan sin huella. Los iconos llevan además `width` y `height` para no agrandarse aunque el CSS no cargue.
@@ -113,7 +119,7 @@ No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del do
 
 1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
 2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
-3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Pendiente fase 2 (tipografía propia, portada tipo bento, foto de Ismael) y fase 3 (capturas reales de los proyectos en maquetas y vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
+3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Fase 2 hecha salvo la foto de Ismael y fase 3 (capturas reales de los proyectos en maquetas y vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
 
 ## Próximas mejoras
 
