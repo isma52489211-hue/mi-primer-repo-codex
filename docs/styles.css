@@ -116,12 +116,17 @@ main .section h2:not(:is(.contact-channel,.service-detail,.portfolio-case,.featu
 .note-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid #b497ff73;box-shadow:0 0 0 4px #b497ff1a;flex:none}
 @media(max-width:760px){.about-intro{grid-template-areas:"copy" "portrait" "statement"}.about-portrait figcaption strong{font-size:23px}}
 /* ===== Fase 3: capturas de proyectos en ventana de navegador ===== */
-.browser-shot{grid-column:1/-1;justify-self:center;width:100%;max-width:960px;margin:12px 0 0;border:1px solid #3d3150;border-radius:14px;overflow:hidden;background:#18141e;box-shadow:0 40px 80px -40px #000,0 0 60px -30px #b497ff59}
+.browser-shot{width:100%;max-width:960px;margin:0 auto;border:1px solid #3d3150;border-radius:14px;overflow:hidden;background:#18141e;box-shadow:0 40px 80px -40px #000,0 0 60px -30px #b497ff59}
 .browser-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#1d1727;border-bottom:1px solid #2f2640}
 .browser-bar>span:not(.browser-url){width:10px;height:10px;border-radius:50%;background:#3b3049}
 .browser-url{margin-left:12px;flex:1;max-width:340px;font-size:12px;color:#b1abba;background:#141019;border:1px solid #2f2640;border-radius:6px;padding:3px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.browser-shot img{display:block;width:100%;height:auto}
+.browser-shot img{display:block;width:100%;height:auto;filter:brightness(.95)}
 .browser-shot figcaption{font-size:12px;color:var(--muted);padding:10px 14px;border-top:1px solid #2f2640;background:#16121c}
 @supports(animation-timeline:view()){@media(prefers-reduced-motion:no-preference){.browser-shot{transform-origin:50% 0;animation:shot-tilt linear both;animation-timeline:view();animation-range:entry 0% entry 420px}}}
 @keyframes shot-tilt{from{transform:perspective(1400px) rotateX(14deg) scale(.94);opacity:.4}to{transform:none;opacity:1}}
-@media(max-width:760px){.browser-shot{border-radius:10px;margin-top:4px}.browser-bar{padding:9px 11px}.browser-url{margin-left:8px}}
+@media(max-width:760px){.browser-shot{border-radius:10px}.browser-bar{padding:9px 11px}.browser-url{margin-left:8px}}
+/* Escenario de color de cada proyecto: integra capturas claras en la página oscura */
+.shot-stage{grid-column:1/-1;margin-top:12px;padding:clamp(22px,4.5vw,60px);border-radius:24px;border:1px solid #ffffff14;position:relative;overflow:hidden}
+.stage-maria{background:radial-gradient(70% 80% at 12% 0%,#2a9a8159,transparent 65%),radial-gradient(60% 70% at 100% 100%,#e8dcc433,transparent 60%),linear-gradient(150deg,#16463c,#0f2b26 55%,#121417)}
+.stage-adolfo{background:radial-gradient(70% 80% at 12% 0%,#3a4a9459,transparent 65%),radial-gradient(60% 70% at 100% 100%,#c75a5540,transparent 60%),linear-gradient(150deg,#1e2652,#141a36 55%,#121218)}
+@media(max-width:760px){.shot-stage{padding:16px;border-radius:16px;margin-top:4px}}
