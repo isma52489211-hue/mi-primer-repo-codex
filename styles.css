@@ -154,3 +154,16 @@ main .section h2:not(:is(.contact-channel,.service-detail,.portfolio-case,.featu
 @keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -10px}}
 @media(max-width:1050px){.hero-a{grid-template-columns:1fr}.hero-visual{min-height:520px;width:100%;max-width:480px;justify-self:center}}
 @media(max-width:760px){.hero-title{letter-spacing:-2px}.hero-visual{min-height:470px}.hero-arch{inset:0 46px 60px}.float-card{width:44%}.fc-1{left:-6px;bottom:96px;top:auto}.fc-2{width:44%;right:-6px;top:auto;bottom:150px}.float-badge{left:0;right:0;margin-inline:auto;width:max-content;bottom:0;white-space:nowrap}}
+/* ===== Estilo unificado con la portada ===== */
+.page-title span,.contact h2 span{background:linear-gradient(100deg,#c7b2ff 0%,#b497ff 35%,#7fd3e6 70%,#ff9d8a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+body:not([data-page="inicio"]) main{position:relative;isolation:isolate;overflow-x:clip}
+body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index:-1;inset:-120px 0 auto;height:640px;pointer-events:none;opacity:.75;background:radial-gradient(36% 46% at 78% 26%,#7a5bd659,transparent 70%),radial-gradient(28% 40% at 12% 12%,#3aa6b840,transparent 70%),radial-gradient(24% 34% at 95% 70%,#ff7a6626,transparent 70%);filter:blur(30px)}
+@media(prefers-reduced-motion:no-preference){body:not([data-page="inicio"]) main::before{animation:aurora 26s ease-in-out infinite alternate}}
+.service-shortcuts>a,.project-jumps>a,.tools-jumps a,.legal-jumps a{border-radius:999px;border-color:#ffffff1f;background:#ffffff0d;backdrop-filter:blur(8px);transition:border-color .3s,box-shadow .3s,background .3s}
+.service-shortcuts>a:hover,.project-jumps>a:hover,.tools-jumps a:hover,.legal-jumps a:hover{border-color:#b497ff99;background:#b497ff14;box-shadow:0 0 30px -10px #b497ff88}
+.contact.section{border:1px solid #ffffff14;border-radius:24px;margin-block:50px;background:radial-gradient(60% 90% at 0% 0%,#5b3fb04d,transparent 60%),radial-gradient(50% 80% at 100% 100%,#2c8a9a40,transparent 60%),radial-gradient(40% 60% at 85% 0%,#ff7a6626,transparent 60%),#141118}
+.contact-person{display:flex;align-items:center;gap:14px;margin-top:30px}
+.contact-person img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:2px solid #b497ff73;box-shadow:0 0 0 5px #b497ff1a}
+.contact-person p{margin:0;display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+.contact-person strong{color:var(--ink);font-size:16px}
+@media(max-width:760px){.contact.section{border-radius:18px;margin-block:36px}}
