@@ -79,7 +79,14 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 
 - **Tipografía Geist** (de Vercel, licencia SIL OFL 1.1, aviso en `LICENSE-geist.txt`), alojada en la propia web (`geist.woff2`, solo caracteres latinos, 29 KB) y precargada en cada página. No se usa Google Fonts.
 - **Portada tipo bento**: "Cómo puedo ayudarte" es una cuadrícula de bloques de distintos tamaños: IA aplicada (bloque grande con una animación de órbitas alrededor de la marca), presencia digital, gestión, formación (máster en IA de BIG school, en curso), herramientas con uso real y método de trabajo. Todo el contenido procede de las otras páginas.
-- **Foto de Ismael**: retrato en Sobre mí (a la derecha en escritorio, tras el texto en móvil) con degradado y pie con su nombre, y avatar circular en el recuadro "Del negocio a la solución" de Inicio. Archivos WebP sin metadatos: `ismael-720.webp` (38 KB), `ismael-480.webp` (18 KB, móvil, vía `srcset`) y `ismael-avatar.webp` (5 KB). `build.py` valida también las imágenes enlazadas.
+- **Foto de Ismael**: retrato en Sobre mí (a la derecha en escritorio, tras el texto en móvil) con degradado y pie con su nombre, y protagonista de la portada. Archivos WebP sin metadatos: `ismael-720.webp` (38 KB) e `ismael-480.webp` (18 KB, móvil, vía `srcset`). `build.py` valida también las imágenes enlazadas.
+
+## Portada (propuesta "Retrato")
+
+- **H1**: "Soluciones digitales para pequeños negocios." (lo que buscaría un cliente en Google), con degradado morado, turquesa y coral en la segunda parte. El lema "Experiencia de negocio · IA aplicada" queda encima. El título de la pestaña y de Open Graph usan la misma frase.
+- **Visual**: la foto de Ismael en forma de arco con halo, y alrededor las capturas de sus dos webs y una tarjeta de Pescadería Contable, que flotan suavemente y enlazan a cada proyecto. Las tarjetas se colocan para no tapar la cara, también en móvil.
+- **Etiquetas**: "Webs claras y rápidas", "Apps de gestión" e "IA y automatizaciones" (sin afirmaciones de resultados que no se puedan respaldar).
+- El fondo vivo de Inicio suma turquesa y coral al morado. Se eligió entre tres prototipos (Retrato, Escaparate y Bento).
 
 ## Diseño visual (fase 3)
 
