@@ -84,6 +84,7 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 ## Diseño visual (fase 3)
 
 - **Capturas de proyectos** en Proyectos: la portada de mariaflorespni.com y de pescaderiasadolfo.es dentro de una ventana de navegador (barra con la dirección), que se endereza desde una ligera inclinación al hacer scroll. Cada ventana va sobre un "escenario" con un degradado de los colores de la marca del cliente (verde para María Flores PNI, azul marino y rojo para Pescaderías Adolfo), para que una captura clara no choque con la página oscura. Las capturas se muestran al 95 % de brillo, sin alterar su contenido. WebP de 1080 px (escritorio) y 640 px (móvil, vía `srcset`), con carga diferida: `captura-maria-*.webp` y `captura-adolfo-*.webp` (de 417 y 606 KB en PNG a 47 y 57 KB).
+- Pendiente: capturas de Pescadería Contable hechas desde el ordenador y con datos de prueba (nunca cifras reales del negocio), para mostrarlas en Proyectos con el mismo tratamiento (ventana y escenario en el turquesa de la app).
 - Pendiente: vídeo corto (Pescadería Contable funcionando o Ismael trabajando con IA), cuando haya una grabación de pantalla.
 
 ## Caché del navegador
