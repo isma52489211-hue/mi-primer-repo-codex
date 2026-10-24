@@ -42,7 +42,7 @@ Proyectos:
 2. **Pescaderías Adolfo** — https://pescaderiasadolfo.es/ — desarrollada con ayuda de IA, publicada y en mejora según Ismael.
 3. **Pescadería Contable** — aplicación propia en desarrollo: preparación de jornada, existencias, compras, ventas, revisión de efectivo y tarjeta, histórico y copia de registros.
 
-Los dos proyectos web se presentan con texto y enlaces, sin capturas, métricas ni funciones no verificadas. Sus dominios no pudieron inspeccionarse desde este entorno por restricciones de acceso. El texto se basa en lo aportado por Ismael.
+Los dos proyectos web se presentan con texto, enlaces y una captura real de su portada facilitada por Ismael, sin métricas ni funciones no verificadas. Sus dominios no pudieron inspeccionarse desde este entorno por restricciones de acceso. El texto se basa en lo aportado por Ismael. Las capturas muestran a personas (María Flores y personal de Pescaderías Adolfo): deben conocer y aceptar su uso en este portfolio.
 
 La aplicación se presenta con un esquema explicativo, no con una demostración funcional. No se publican ubicaciones ni información de pruebas. El registro de las operaciones es manual; no se atribuyen funciones de IA ni un cálculo completo del beneficio.
 
@@ -80,6 +80,11 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 - **Tipografía Geist** (de Vercel, licencia SIL OFL 1.1, aviso en `LICENSE-geist.txt`), alojada en la propia web (`geist.woff2`, solo caracteres latinos, 29 KB) y precargada en cada página. No se usa Google Fonts.
 - **Portada tipo bento**: "Cómo puedo ayudarte" es una cuadrícula de bloques de distintos tamaños: IA aplicada (bloque grande con una animación de órbitas alrededor de la marca), presencia digital, gestión, formación (máster en IA de BIG school, en curso), herramientas con uso real y método de trabajo. Todo el contenido procede de las otras páginas.
 - **Foto de Ismael**: retrato en Sobre mí (a la derecha en escritorio, tras el texto en móvil) con degradado y pie con su nombre, y avatar circular en el recuadro "Del negocio a la solución" de Inicio. Archivos WebP sin metadatos: `ismael-720.webp` (38 KB), `ismael-480.webp` (18 KB, móvil, vía `srcset`) y `ismael-avatar.webp` (5 KB). `build.py` valida también las imágenes enlazadas.
+
+## Diseño visual (fase 3)
+
+- **Capturas de proyectos** en Proyectos: la portada de mariaflorespni.com y de pescaderiasadolfo.es dentro de una ventana de navegador (barra con la dirección), que se endereza desde una ligera inclinación al hacer scroll. WebP de 1080 px (escritorio) y 640 px (móvil, vía `srcset`), con carga diferida: `captura-maria-*.webp` y `captura-adolfo-*.webp` (de 417 y 606 KB en PNG a 47 y 57 KB).
+- Pendiente: vídeo corto (Pescadería Contable funcionando o Ismael trabajando con IA), cuando haya una grabación de pantalla.
 
 ## Caché del navegador
 
@@ -119,7 +124,7 @@ No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del do
 
 1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
 2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
-3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Fase 2 hecha (tipografía, portada tipo bento y foto) y fase 3 (capturas reales de los proyectos en maquetas y vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
+3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Fase 2 hecha (tipografía, portada tipo bento y foto) y fase 3 (capturas hechas; falta el vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
 
 ## Próximas mejoras
 
