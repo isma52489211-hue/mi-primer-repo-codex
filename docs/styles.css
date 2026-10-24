@@ -167,3 +167,37 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .contact-person p{margin:0;display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
 .contact-person strong{color:var(--ink);font-size:16px}
 @media(max-width:760px){.contact.section{border-radius:18px;margin-block:36px}}
+/* ===== Sistema de tarjetas en todas las páginas (como la portada) ===== */
+.service-detail,.method-steps li,.faq-list details,.portfolio-story dl>div,.portfolio-takeaway,.case-row,.project-note,.portfolio-learning,.experience-levels article,.tool-group,.tools-examples>article,.tools-learning,.about-chapters article,.about-principles article,.about-building>div:first-child,.contact-prompts li,.contact-more{border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,#1b1623,#131118 72%);padding:24px}
+.service-detail{padding:44px;border-radius:22px;margin-block:22px}
+#presencia-digital{background:radial-gradient(60% 70% at 0% 0%,#5b3fb040,transparent 60%),linear-gradient(160deg,#1b1623,#131118 72%)}
+#gestion{background:radial-gradient(60% 70% at 0% 0%,#2c8a9a38,transparent 60%),linear-gradient(160deg,#16191f,#131118 72%)}
+#ia{background:radial-gradient(60% 70% at 0% 0%,#ff7a6630,transparent 60%),linear-gradient(160deg,#1f1619,#131118 72%)}
+#gestion .icon-tile{color:#7fd3e6;border-color:#2f5a63;background:linear-gradient(145deg,#1b3038,#131a1f)}
+#ia .icon-tile{color:#ff9d8a;border-color:#6a3a36;background:linear-gradient(145deg,#3a2224,#1c1416)}
+.service-check{border-radius:12px}
+.method-steps{gap:16px}.method-steps li{display:block;padding:24px}
+.faq-list details{padding:16px 22px;margin-bottom:12px;border-radius:14px}
+.faq-list details[open]{border-color:#4b375f}
+.portfolio-identity,.featured{border-radius:22px}
+.portfolio-story dl>div,.portfolio-story dl>div:first-child{padding:18px 20px;margin-bottom:12px;border-radius:14px}
+.portfolio-takeaway{padding:20px;border-radius:14px;border-color:#47355e;background:linear-gradient(150deg,#2b2040,#18131f)}
+.case-body{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.case-row,.case-row:first-child{flex-direction:column;gap:8px;padding:22px}
+.project-note{border-left:3px solid var(--purple);border-radius:14px;padding:22px 26px}
+.portfolio-learning,.tools-learning{padding:44px;border-radius:22px;margin-block:44px;background:radial-gradient(60% 80% at 0% 0%,#5b3fb03d,transparent 60%),radial-gradient(50% 70% at 100% 100%,#2c8a9a30,transparent 60%),#141118}
+.experience-levels article{padding:22px}
+.tool-group{padding:0 22px;margin-bottom:12px}
+.tool-group,.tool-group:last-child{border:1px solid var(--line)}
+.tool-group[open]{border-color:#4b375f;background:radial-gradient(70% 50% at 0% 0%,#5b3fb02e,transparent 60%),linear-gradient(160deg,#1b1623,#131118 72%)}
+.tools-examples>article{padding:26px}
+.about-chapters article,.about-chapters article:first-child{padding:24px;margin-bottom:14px}
+.about-principles article{padding:24px}
+.about-building>div:first-child{padding:30px}
+.contact-prompts li,.contact-prompts li:first-child{padding:22px;margin-bottom:12px;gap:18px}
+.contact-prompts .icon-tile{margin:0}
+.contact-more{padding:22px 26px;margin-block:30px}
+@supports(animation-timeline:view()){@media(prefers-reduced-motion:no-preference){.tool-group,.portfolio-story dl>div,.project-note,.portfolio-learning,.tools-learning,.about-building>div:first-child,.contact-more{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% entry 240px}}}
+@media(max-width:760px){.method-steps{grid-template-columns:1fr}.service-detail{padding:24px;border-radius:18px}.case-body{grid-template-columns:1fr}.portfolio-learning,.tools-learning{padding:26px;border-radius:18px;margin-block:30px}.tool-group{padding:0 16px}.contact-prompts li{padding:18px}}
+/* Los elementos del final de la página no siempre pueden subir lo bastante para completar el revelado: se muestran sin él. */
+@supports(animation-timeline:view()){.contact.section h2,.contact-more{animation:none}}

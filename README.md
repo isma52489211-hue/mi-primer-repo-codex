@@ -92,6 +92,18 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 
 El resto de páginas comparte el lenguaje visual de la portada: la parte destacada de cada título principal y de los títulos de cierre lleva el degradado morado, turquesa y coral; todas tienen el fondo vivo (más suave que en Inicio); los accesos rápidos internos son pastillas translúcidas con brillo al pasar el ratón; y los bloques de cierre de cada página tienen fondo de color y bordes redondeados. En Contacto, una foto pequeña de Ismael acompaña al título ("Te responde Ismael").
 
+## Sistema de tarjetas en todas las páginas
+
+Como en la portada, el contenido de las páginas interiores va en tarjetas (bordes redondeados, fondo degradado, brillo que sigue al ratón con la clase `glow-card` y aparición al hacer scroll):
+
+- **Servicios**: cada área es una tarjeta grande con su color (morado presencia digital, turquesa gestión, coral IA); los 4 pasos del método llevan icono; cada pregunta frecuente es una tarjeta.
+- **Proyectos**: contexto, aportación, estado y aprendizaje de cada web en tarjetas; los 4 pasos de Pescadería Contable en cuadrícula de 2 × 2; nota de la app y bloque "El hilo entre los tres" como tarjetas.
+- **Herramientas**: niveles, cada categoría desplegable, los 3 ejemplos de uso (con icono) y el bloque de aprendizaje.
+- **Sobre mí**: los 3 capítulos de experiencia y los 3 principios, con icono.
+- **Contacto**: las 3 preguntas para empezar, con icono en lugar de número, y el bloque de enlaces final.
+
+Los elementos situados al final de una página no llevan animación de aparición: en pantallas altas no siempre pueden subir lo suficiente para completarla.
+
 ## Diseño visual (fase 3)
 
 - **Capturas de proyectos** en Proyectos: la portada de mariaflorespni.com y de pescaderiasadolfo.es dentro de una ventana de navegador (barra con la dirección), que se endereza desde una ligera inclinación al hacer scroll. Cada ventana va sobre un "escenario" con un degradado de los colores de la marca del cliente (verde para María Flores PNI, azul marino y rojo para Pescaderías Adolfo), para que una captura clara no choque con la página oscura. Las capturas se muestran al 95 % de brillo, sin alterar su contenido. WebP de 1080 px (escritorio) y 640 px (móvil, vía `srcset`), con carga diferida: `captura-maria-*.webp` y `captura-adolfo-*.webp` (de 417 y 606 KB en PNG a 47 y 57 KB).
