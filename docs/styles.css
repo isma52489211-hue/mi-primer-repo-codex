@@ -201,3 +201,9 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 @media(max-width:760px){.method-steps{grid-template-columns:1fr}.service-detail{padding:24px;border-radius:18px}.case-body{grid-template-columns:1fr}.portfolio-learning,.tools-learning{padding:26px;border-radius:18px;margin-block:30px}.tool-group{padding:0 16px}.contact-prompts li{padding:18px}}
 /* Los elementos del final de la página no siempre pueden subir lo bastante para completar el revelado: se muestran sin él. */
 @supports(animation-timeline:view()){.contact.section h2,.contact-more{animation:none}}
+/* Capturas de Pescadería Contable */
+.stage-app{margin-top:28px;background:radial-gradient(70% 80% at 10% 0%,#2f8fa659,transparent 65%),radial-gradient(50% 70% at 100% 100%,#7ac3d926,transparent 60%),linear-gradient(150deg,#123a44,#10232b 55%,#121418)}
+.app-shots{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.app-shots .browser-shot{max-width:none}
+.app-shots-note{margin:18px 0 0;font-size:13px;color:#a9d3de;text-align:center}
+@media(max-width:760px){.app-shots{grid-template-columns:1fr;gap:16px}}
