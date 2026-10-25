@@ -144,11 +144,15 @@ Cada página lleva sus etiquetas Open Graph y su `canonical` con la dirección d
 
 No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del dominio (`isma52489211-hue.github.io/robots.txt`) y esta web vive en la subcarpeta `/mi-primer-repo-codex/`, así que un archivo aquí no tendría ningún efecto. Si algún día la web pasa a un dominio propio, ya se podrá añadir. Para que Google encuentre el sitemap hay que enviarlo desde Google Search Console.
 
+## Continuidad entre sesiones
+
+`CLAUDE.md` recoge cómo trabajar con Ismael, las reglas de contenido, el sistema visual, los errores ya conocidos y el flujo de publicación. Claude Code lo lee al empezar cada sesión en este repositorio; este README completa el contexto con el detalle de cada página y los pendientes. Para retomar el trabajo basta con abrir una sesión nueva y pedir: "Lee el README y sigamos con el siguiente pendiente".
+
 ## Pendientes acordados
 
 1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
 2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
-3. **Mejoras visuales** (fase 1 hecha: movimiento, fondos, tarjetas e iconos). Fase 2 hecha (tipografía, portada tipo bento y foto) y fase 3 (capturas hechas; falta el vídeo). Criterios: ligereza, sin imágenes de archivo genéricas de IA y sin capturas ni cifras que no sean reales.
+3. **Vídeo corto** (opcional): 10–15 segundos de Pescadería Contable funcionando o de Ismael trabajando con IA, comprimido (menos de 1–2 MB), con imagen fija de respaldo y sin reproducción automática con "reducir movimiento". Las mejoras visuales (tarjetas, color, movimiento, tipografía, foto y capturas de los tres proyectos) están hechas.
 
 ## Próximas mejoras
 
