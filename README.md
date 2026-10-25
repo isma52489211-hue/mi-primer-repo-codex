@@ -84,10 +84,14 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 
 ## Portada (propuesta "Retrato")
 
-- **H1**: "Soluciones digitales para pequeños negocios." (lo que buscaría un cliente en Google), con degradado morado, turquesa y coral en la segunda parte. El lema "Experiencia de negocio · IA aplicada" queda encima. El título de la pestaña y de Open Graph usan la misma frase.
-- **Visual**: la foto de Ismael en forma de arco con halo, y alrededor las capturas de sus dos webs y una tarjeta de Pescadería Contable, que flotan suavemente y enlazan a cada proyecto. Las tarjetas se colocan para no tapar la cara, también en móvil.
-- **Etiquetas**: "Webs claras y rápidas", "Apps de gestión" e "IA y automatizaciones" (sin afirmaciones de resultados que no se puedan respaldar).
-- El fondo vivo de Inicio suma turquesa y coral al morado. Se eligió entre tres prototipos (Retrato, Escaparate y Bento).
+- **H1**: "Soluciones digitales para pequeños negocios." con degradado; lema "Experiencia de negocio · IA aplicada" encima. Título de pestaña, Open Graph y descripción para Google alineados con los servicios.
+- **Llamada a la acción** en la primera pantalla: botón "Cuéntame tu idea" (Contacto) y enlace "Ver proyectos".
+- **Visual**: foto de Ismael en arco con las capturas de sus webs y la tarjeta de Pescadería Contable flotando alrededor (sin tapar la cara), enlazadas a cada proyecto. Etiquetas: "Webs y tiendas online", "Tu negocio conectado", "Apps a medida".
+- **Cómo puedo ayudarte** (bento): bloque grande "IA aplicada a tu negocio" como enfoque de trabajo; los tres servicios con su color (morado, turquesa, coral) enlazados a su sección de Servicios; formación, herramientas y método.
+- **Proyectos destacados**: cada proyecto con miniatura real y una frase concreta.
+- **Cierre**: botones "Cuéntame tu idea" y "Escribir por WhatsApp".
+
+Auditoría de Inicio hecha (primera de la revisión página a página). En ella se eliminaron del CSS unas 130 reglas de diseños anteriores que ya no se usaban (de 62 a 54 KB), comprobando con capturas que no cambia nada visible.
 
 ## Estilo unificado
 
@@ -154,6 +158,7 @@ No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del do
 1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
 2. **Precio orientativo de los servicios** (opcional): decidir si se publica un precio "desde", si se ofrece una primera conversación gratuita o solo presupuesto a medida. Los tres servicios concretos ya están en Servicios.
 3. **Vídeo corto** (opcional): 10–15 segundos de Pescadería Contable funcionando o de Ismael trabajando con IA, comprimido (menos de 1–2 MB), con imagen fija de respaldo y sin reproducción automática con "reducir movimiento". Las mejoras visuales (tarjetas, color, movimiento, tipografía, foto y capturas de los tres proyectos) están hechas.
+4. **Opiniones de clientes**: pedir a María Flores y a Pescaderías Adolfo una o dos frases reales sobre el trabajo, con permiso para publicarlas. Sin ellas no se publica ninguna opinión.
 
 ## Próximas mejoras
 
