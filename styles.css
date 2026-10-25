@@ -123,10 +123,10 @@ main .section h2:not(:is(.contact-channel,.service-detail,.portfolio-case,.featu
 @keyframes shot-tilt{from{transform:perspective(1400px) rotateX(14deg) scale(.94);opacity:.4}to{transform:none;opacity:1}}
 @media(max-width:760px){.browser-shot{border-radius:10px}.browser-bar{padding:9px 11px}.browser-url{margin-left:8px}}
 /* Escenario de color de cada proyecto: integra capturas claras en la página oscura */
-.shot-stage{grid-column:1/-1;margin-top:12px;padding:clamp(22px,4.5vw,60px);border-radius:24px;border:1px solid #ffffff14;position:relative;overflow:hidden}
-.stage-maria{background:radial-gradient(70% 80% at 12% 0%,#2a9a8159,transparent 65%),radial-gradient(60% 70% at 100% 100%,#e8dcc433,transparent 60%),linear-gradient(150deg,#16463c,#0f2b26 55%,#121417)}
-.stage-adolfo{background:radial-gradient(70% 80% at 12% 0%,#3a4a9459,transparent 65%),radial-gradient(60% 70% at 100% 100%,#c75a5540,transparent 60%),linear-gradient(150deg,#1e2652,#141a36 55%,#121218)}
-@media(max-width:760px){.shot-stage{padding:16px;border-radius:16px;margin-top:4px}}
+
+
+
+
 /* ===== Portada: propuesta A "Retrato" ===== */
 .hero-title{font-size:clamp(44px,5.6vw,80px);letter-spacing:-3px;line-height:1.02;margin:0 0 26px}
 .grad{background:linear-gradient(100deg,#c7b2ff 0%,#b497ff 35%,#7fd3e6 70%,#ff9d8a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -199,7 +199,7 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 /* Los elementos del final de la página no siempre pueden subir lo bastante para completar el revelado: se muestran sin él. */
 @supports(animation-timeline:view()){.contact.section h2,.contact-more{animation:none}}
 /* Capturas de Pescadería Contable */
-.stage-app{margin-top:28px;background:radial-gradient(70% 80% at 10% 0%,#2f8fa659,transparent 65%),radial-gradient(50% 70% at 100% 100%,#7ac3d926,transparent 60%),linear-gradient(150deg,#123a44,#10232b 55%,#121418)}
+
 .app-shots{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
 .app-shots .browser-shot{max-width:none}
 .app-shots-note{margin:18px 0 0;font-size:13px;color:#a9d3de;text-align:center}
@@ -234,3 +234,12 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .project-links .text-link{margin-top:0}.project-links .service-link{margin-top:0}
 .portfolio-takeaway .service-link{margin-top:6px}
 .portfolio-actions{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+/* Proyectos: miniatura dentro de la ficha (opción C) y capturas de la app dentro de su tarjeta */
+.portfolio-case .portfolio-identity{padding:28px;border-radius:18px;overflow:hidden;align-self:start}
+.portfolio-case .portfolio-story{align-self:start}
+.mini-shot{margin:-28px -28px 24px;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid #ffffff1a;background:#18141e}
+.mini-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.portfolio-app .app-shots{grid-column:1/-1;margin-top:8px;gap:18px}
+.portfolio-app .app-shots .browser-shot{box-shadow:0 20px 50px -30px #000}
+.portfolio-app .app-shots-note{grid-column:1/-1;margin:0;text-align:left}
+@media(max-width:760px){.portfolio-case .portfolio-identity{padding:22px}.mini-shot{margin:-22px -22px 20px}}
