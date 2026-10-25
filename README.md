@@ -10,11 +10,12 @@ Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
 ## Servicios y portfolio
 
-La página de Servicios desarrolla tres áreas:
+La página de Servicios presenta tres servicios concretos y un área en formación:
 
-- **Presencia digital y captación**: webs, marketing y contenido de marca, con enlaces a María Flores PNI y Pescaderías Adolfo.
-- **Aplicaciones y control del negocio**: definición de requisitos, primeras versiones con IA y validación en la operativa, con Pescadería Contable como proyecto en desarrollo.
-- **IA y automatizaciones**: definición de tareas y pruebas acotadas; agentes, Make, n8n e integraciones se mantienen como formación en curso.
+- **Web o tienda online**: estructura y textos, diseño para móvil, contacto directo y, si se vende online, catálogo y pago con la plataforma de tienda adecuada. No incluye fotografía profesional ni textos legales definitivos (los revisa la asesoría del cliente). Pruebas: María Flores PNI y Pescaderías Adolfo; todavía no hay una tienda online publicada que mostrar.
+- **Tu negocio conectado**: Google Business Profile, WhatsApp Business, Instagram y Facebook enlazados y alta de la web en Google.
+- **Aplicación a medida (primera versión)**: gestión, reservas y agendas, facturas, seguimiento de clientes…; se construye con IA y se prueba con casos reales. Si maneja pagos, datos sensibles, varios usuarios o se publica en tiendas de apps, se plantea con apoyo técnico especializado. Prueba: Pescadería Contable.
+- **IA y automatizaciones**: exploración y primeras pruebas, formación en curso.
 
 Cada área explica la necesidad, qué puede aportar Ismael y cómo se revisaría el resultado. Incluye acceso rápido a cada área, proceso de trabajo, preguntas frecuentes sobre alcance y pruebas, y cierre hacia Contacto. Los ejemplos de necesidades son ilustrativos. No se publican precios, métricas ni garantías de resultados. El canal de contacto incluye el correo y el número facilitados por Ismael para su publicación.
 
@@ -151,7 +152,7 @@ No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del do
 ## Pendientes acordados
 
 1. **Comprar un dominio propio.** Recomendación: un `.es` en DonDominio (unos 7 €/año, mismo precio al renovar; confirmar en el carrito). No contratar hosting: GitHub Pages admite dominio propio gratis. Al tenerlo: configurar el DNS y el archivo `CNAME`, cambiar la constante `SITE` de `scripts/build.py` y las etiquetas `canonical` y Open Graph de los HTML, dar de alta la web en Google Search Console y enviar el sitemap, y valorar un correo con el dominio.
-2. **Oferta concreta (punto 3 de la auditoría).** Definir uno o dos servicios cerrados que Ismael pueda entregar sin dudar (por ejemplo, una web de presentación para un comercio local), con plazos o precio orientativo si quiere publicarlos, y presentarlos en Servicios.
+2. **Precio orientativo de los servicios** (opcional): decidir si se publica un precio "desde", si se ofrece una primera conversación gratuita o solo presupuesto a medida. Los tres servicios concretos ya están en Servicios.
 3. **Vídeo corto** (opcional): 10–15 segundos de Pescadería Contable funcionando o de Ismael trabajando con IA, comprimido (menos de 1–2 MB), con imagen fija de respaldo y sin reproducción automática con "reducir movimiento". Las mejoras visuales (tarjetas, color, movimiento, tipografía, foto y capturas de los tres proyectos) están hechas.
 
 ## Próximas mejoras

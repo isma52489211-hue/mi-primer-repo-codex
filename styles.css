@@ -170,11 +170,11 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 /* ===== Sistema de tarjetas en todas las páginas (como la portada) ===== */
 .service-detail,.method-steps li,.faq-list details,.portfolio-story dl>div,.portfolio-takeaway,.case-row,.project-note,.portfolio-learning,.experience-levels article,.tool-group,.tools-examples>article,.tools-learning,.about-chapters article,.about-principles article,.about-building>div:first-child,.contact-prompts li,.contact-more{border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,#1b1623,#131118 72%);padding:24px}
 .service-detail{padding:44px;border-radius:22px;margin-block:22px}
-#presencia-digital{background:radial-gradient(60% 70% at 0% 0%,#5b3fb040,transparent 60%),linear-gradient(160deg,#1b1623,#131118 72%)}
-#gestion{background:radial-gradient(60% 70% at 0% 0%,#2c8a9a38,transparent 60%),linear-gradient(160deg,#16191f,#131118 72%)}
-#ia{background:radial-gradient(60% 70% at 0% 0%,#ff7a6630,transparent 60%),linear-gradient(160deg,#1f1619,#131118 72%)}
-#gestion .icon-tile{color:#7fd3e6;border-color:#2f5a63;background:linear-gradient(145deg,#1b3038,#131a1f)}
-#ia .icon-tile{color:#ff9d8a;border-color:#6a3a36;background:linear-gradient(145deg,#3a2224,#1c1416)}
+#web{background:radial-gradient(60% 70% at 0% 0%,#5b3fb040,transparent 60%),linear-gradient(160deg,#1b1623,#131118 72%)}
+#ecosistema{background:radial-gradient(60% 70% at 0% 0%,#2c8a9a38,transparent 60%),linear-gradient(160deg,#16191f,#131118 72%)}
+#apps{background:radial-gradient(60% 70% at 0% 0%,#ff7a6630,transparent 60%),linear-gradient(160deg,#1f1619,#131118 72%)}
+#ecosistema .icon-tile{color:#7fd3e6;border-color:#2f5a63;background:linear-gradient(145deg,#1b3038,#131a1f)}
+#apps .icon-tile{color:#ff9d8a;border-color:#6a3a36;background:linear-gradient(145deg,#3a2224,#1c1416)}
 .service-check{border-radius:12px}
 .method-steps{gap:16px}.method-steps li{display:block;padding:24px}
 .faq-list details{padding:16px 22px;margin-bottom:12px;border-radius:14px}
@@ -207,3 +207,4 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .app-shots .browser-shot{max-width:none}
 .app-shots-note{margin:18px 0 0;font-size:13px;color:#a9d3de;text-align:center}
 @media(max-width:760px){.app-shots{grid-template-columns:1fr;gap:16px}}
+#ia{background:radial-gradient(60% 70% at 0% 0%,#8a5bd633,transparent 60%),linear-gradient(160deg,#1b1623,#131118 72%)}
