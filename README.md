@@ -44,7 +44,7 @@ Proyectos:
 
 Los dos proyectos web se presentan con texto, enlaces y una captura real de su portada facilitada por Ismael, sin métricas ni funciones no verificadas. Sus dominios no pudieron inspeccionarse desde este entorno por restricciones de acceso. El texto se basa en lo aportado por Ismael. Las capturas muestran a personas (María Flores y personal de Pescaderías Adolfo): deben conocer y aceptar su uso en este portfolio.
 
-La aplicación se presenta con un esquema explicativo, no con una demostración funcional. No se publican ubicaciones ni información de pruebas. El registro de las operaciones es manual; no se atribuyen funciones de IA ni un cálculo completo del beneficio.
+La aplicación se presenta con un esquema explicativo y con capturas reales de dos pantallas (apertura y cierre de jornada) con datos inventados. No se publican ubicaciones. El registro de las operaciones es manual; no se atribuyen funciones de IA. Al cerrar la jornada calcula el beneficio neto del día y su margen (ventas menos coste del género y mermas); los gastos generales del negocio quedan fuera de ese cálculo.
 
 ## Scripts
 
@@ -107,7 +107,7 @@ Los elementos situados al final de una página no llevan animación de aparició
 ## Diseño visual (fase 3)
 
 - **Capturas de proyectos** en Proyectos: la portada de mariaflorespni.com y de pescaderiasadolfo.es dentro de una ventana de navegador (barra con la dirección), que se endereza desde una ligera inclinación al hacer scroll. Cada ventana va sobre un "escenario" con un degradado de los colores de la marca del cliente (verde para María Flores PNI, azul marino y rojo para Pescaderías Adolfo), para que una captura clara no choque con la página oscura. Las capturas se muestran al 95 % de brillo, sin alterar su contenido. WebP de 1080 px (escritorio) y 640 px (móvil, vía `srcset`), con carga diferida: `captura-maria-*.webp` y `captura-adolfo-*.webp` (de 417 y 606 KB en PNG a 47 y 57 KB).
-- **Capturas de Pescadería Contable** en Proyectos: pantallas de apertura (fase 1) y cierre de jornada (fase 3), recortadas para mostrar solo la aplicación (sin barra del navegador ni del sistema), en ventanas sobre un escenario turquesa. WebP de 1080 y 640 px: `captura-app-apertura-*.webp` y `captura-app-cierre-*.webp`. La nota indica que son datos de una jornada de prueba: confirmarlo antes de publicar.
+- **Capturas de Pescadería Contable** en Proyectos: pantallas de apertura (fase 1) y cierre de jornada (fase 3), recortadas para mostrar solo la aplicación (sin barra del navegador ni del sistema), en ventanas sobre un escenario turquesa. WebP de 1080 y 640 px: `captura-app-apertura-*.webp` y `captura-app-cierre-*.webp`. La nota indica que son datos de una jornada de prueba (confirmado por Ismael: datos inventados).
 - Pendiente: vídeo corto (Pescadería Contable funcionando o Ismael trabajando con IA), cuando haya una grabación de pantalla.
 
 ## Caché del navegador
