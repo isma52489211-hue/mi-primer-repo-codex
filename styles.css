@@ -237,9 +237,10 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 /* Proyectos: miniatura dentro de la ficha (opción C) y capturas de la app dentro de su tarjeta */
 .portfolio-case .portfolio-identity{padding:28px;border-radius:18px;overflow:hidden;align-self:start}
 .portfolio-case .portfolio-story{align-self:start}
-.mini-shot{position:relative;margin:26px -28px -28px;aspect-ratio:16/10;overflow:hidden;border-top:1px solid #ffffff1a;background:#18141e}.mini-shot::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#101014b3 0%,#10101440 30%,#10101426 100%)}
-.mini-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;filter:brightness(.78) saturate(.9)}
+.mini-shot{position:relative;margin:26px -28px -28px;padding:14px;aspect-ratio:auto;overflow:hidden;border-top:1px solid #ffffff14;background:linear-gradient(160deg,#3a276666,#18131f 70%)}.mini-shot::after{content:"";position:absolute;inset:14px;border-radius:10px;pointer-events:none;box-shadow:inset 0 0 0 1px #b497ff4d;background:linear-gradient(180deg,#10101433 0%,transparent 35%)}
+.mini-shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:10px;filter:brightness(.93)}
+.maria-case .mini-shot img{aspect-ratio:auto}
 .portfolio-app .app-shots{grid-column:1/-1;margin-top:8px;gap:18px}
 .portfolio-app .app-shots .browser-shot{box-shadow:0 20px 50px -30px #000}
 .portfolio-app .app-shots-note{grid-column:1/-1;margin:0;text-align:left}
-@media(max-width:760px){.portfolio-case .portfolio-identity{padding:22px}.mini-shot{margin:22px -22px -22px}}
+@media(max-width:760px){.portfolio-case .portfolio-identity{padding:22px}.mini-shot{margin:22px -22px -22px;padding:10px}.mini-shot::after{inset:10px}}
