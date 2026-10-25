@@ -15,6 +15,7 @@ Web personal y portfolio de Ismael (marca "ISMAEL · IA APLICADA"): soluciones d
 
 ## Reglas de contenido (no negociables)
 
+- **El cliente es el centro.** Los textos hablan de lo que necesita y consigue el cliente, no de Ismael. En proyectos: "El reto", "Qué hice" y "Qué tiene ahora"; nada de "qué aporta a mi experiencia". Cada página lleva al contacto (botón "Cuéntame tu idea" y WhatsApp).
 - Nada inventado: ni cifras, ni testimonios, ni resultados, ni capturas falsas. Si una frase no se puede respaldar, se suaviza (por ejemplo, "Webs claras y rápidas" en lugar de "Webs que convierten").
 - Formación: "Estoy terminando el máster en IA de BIG school". No decir que ya lo tiene hasta que lo termine y lo confirme.
 - Experiencia: conoce la pescadería desde dentro; otros comercios de alimentación se presentan como "parecidos", no como experiencia directa.

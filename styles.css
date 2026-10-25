@@ -227,3 +227,10 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .service-secondary{padding-block:34px}
 .service-secondary .service-purpose h2{font-size:clamp(24px,2.4vw,30px)}
 .service-secondary .icon-tile{width:38px;height:38px;border-radius:10px}.service-secondary .icon-tile .icon{width:18px;height:18px}
+/* Proyectos centrados en el cliente */
+.portfolio-app{grid-template-columns:1fr}
+.portfolio-app .project-intro{max-width:780px}
+.project-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;margin-top:15px}
+.project-links .text-link{margin-top:0}.project-links .service-link{margin-top:0}
+.portfolio-takeaway .service-link{margin-top:6px}
+.portfolio-actions{display:flex;flex-direction:column;align-items:flex-start;gap:16px}

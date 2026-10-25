@@ -45,6 +45,8 @@ Proyectos:
 2. **Pescaderías Adolfo** — https://pescaderiasadolfo.es/ — desarrollada con ayuda de IA, publicada y en mejora según Ismael.
 3. **Pescadería Contable** — aplicación propia en desarrollo: preparación de jornada, existencias, compras, ventas, revisión de efectivo y tarjeta, histórico y copia de registros.
 
+Auditoría de Proyectos hecha: cada web se cuenta desde el cliente ("El reto", "Qué hice", "Qué tiene ahora") con lo que se ve en su web publicada, y enlaza al servicio relacionado; Pescadería Contable se presenta por el problema que resuelve (sin el esquema dibujado, ya cubierto por las capturas y "Cómo funciona"); se eliminó "El hilo entre los tres"; el cierre lleva a Contacto y WhatsApp. Los textos de Inicio y Servicios también se reescribieron centrados en el cliente.
+
 Los dos proyectos web se presentan con texto, enlaces y una captura real de su portada facilitada por Ismael, sin métricas ni funciones no verificadas. Sus dominios no pudieron inspeccionarse desde este entorno por restricciones de acceso. El texto se basa en lo aportado por Ismael. Las capturas muestran a personas (María Flores y personal de Pescaderías Adolfo): deben conocer y aceptar su uso en este portfolio.
 
 La aplicación se presenta con un esquema explicativo y con capturas reales de dos pantallas (apertura y cierre de jornada) con datos inventados. No se publican ubicaciones. El registro de las operaciones es manual; no se atribuyen funciones de IA. Al cerrar la jornada calcula el beneficio neto del día y su margen (ventas menos coste del género y mermas); los gastos generales del negocio quedan fuera de ese cálculo.
