@@ -151,7 +151,7 @@ En pantallas táctiles y en móvil (`pointer:coarse` o menos de 760 px) los enla
 
 `aviso-legal.html` reúne los datos del titular exigidos por el artículo 10 de la LSSI, las condiciones de uso, la política de privacidad de los contactos por correo, WhatsApp y teléfono, y la información sobre cookies y alojamiento en GitHub Pages. Se enlaza desde el pie de todas las páginas y no se indexa en buscadores.
 
-Los datos del titular (nombre, NIF y domicilio) están completados con los facilitados por Ismael, como autónomo. `scripts/build.py` se detiene si en alguna página queda un marcador `PENDIENTE`, para no publicar nunca información incompleta. El texto es una base general: conviene que lo revise un asesor.
+Los datos del titular (nombre, NIF y domicilio) están completados con los facilitados por Ismael, como autónomo. `scripts/build.py` se detiene si en alguna página queda un marcador `PENDIENTE`, para no publicar nunca información incompleta. El texto es una base general: conviene que lo revise un asesor. Revisión de forma hecha en la auditoría página a página: letra del NIF en mayúscula, mención de que las capturas de clientes y las imágenes con personas se publican con autorización, y fecha de actualización al día. No es asesoramiento legal: si se añaden formularios, analítica o tienda online, el texto debe ampliarse y revisarlo una asesoría.
 
 ## Identidad y vista previa al compartir
 
