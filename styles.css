@@ -248,3 +248,8 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .contact-person{flex-wrap:wrap}
 .contact-quick{margin-left:auto}
 @media(max-width:760px){.contact-quick{margin-left:0;width:100%;justify-content:space-between}}
+/* Sobre mí: qué ganas trabajando conmigo */
+.about-gains{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px}
+.about-gains li{position:relative;padding-left:22px;font-size:14px;color:var(--muted);line-height:1.6}
+.about-gains li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--purple)}
+.about-gains strong{color:var(--ink);font-weight:600}
