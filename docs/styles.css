@@ -244,3 +244,7 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .portfolio-app .app-shots .browser-shot{box-shadow:0 20px 50px -30px #000}
 .portfolio-app .app-shots-note{grid-column:1/-1;margin:0;text-align:left}
 @media(max-width:760px){.portfolio-case .portfolio-identity{padding:22px}.mini-shot{margin:22px -22px -22px;padding:10px}.mini-shot::after{inset:10px}}
+/* Contacto: WhatsApp destacado junto a la presentación */
+.contact-person{flex-wrap:wrap}
+.contact-quick{margin-left:auto}
+@media(max-width:760px){.contact-quick{margin-left:0;width:100%;justify-content:space-between}}
