@@ -113,6 +113,10 @@ Como en la portada, el contenido de las páginas interiores va en tarjetas (bord
 
 Los elementos situados al final de una página no llevan animación de aparición: en pantallas altas no siempre pueden subir lo suficiente para completarla.
 
+## Herramientas (auditoría)
+
+Auditoría de Herramientas hecha, con el cliente en el centro: H1 "Herramientas al servicio de tu negocio."; cada categoría explica "Qué gana tu negocio" en lugar de "Para qué me sirven"; "La IA ayuda. Tú recibes algo revisado."; "Lo que sigo aprendiendo" se resume en "En formación" (agentes, Make, n8n, API y MCP, aplicados solo cuando estén probados); cierre con Contacto y WhatsApp. Los niveles de cada herramienta no cambian.
+
 ## Sobre mí
 
 Auditoría de Sobre mí hecha, con el cliente en el centro: H1 "Vengo del negocio. Por eso entiendo el tuyo."; la entrada explica la experiencia como empresario al servicio del negocio del cliente; capítulos y principios redactados desde lo que gana el cliente ("Que tu inversión tenga sentido", "Que funcione en tu día a día"); la sección "Aprender haciendo" pasa a "Qué ganas trabajando conmigo" (conocimiento del negocio, primera versión pronto, costes claros y honestidad sobre el apoyo especializado); la tarjeta del máster de BIG school se mantiene, en curso; cierre con Contacto y WhatsApp.
