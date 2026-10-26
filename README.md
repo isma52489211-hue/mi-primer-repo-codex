@@ -113,6 +113,10 @@ Como en la portada, el contenido de las páginas interiores va en tarjetas (bord
 
 Los elementos situados al final de una página no llevan animación de aparición: en pantallas altas no siempre pueden subir lo suficiente para completarla.
 
+## Sobre mí
+
+Auditoría de Sobre mí hecha, con el cliente en el centro: H1 "Vengo del negocio. Por eso entiendo el tuyo."; la entrada explica la experiencia como empresario al servicio del negocio del cliente; capítulos y principios redactados desde lo que gana el cliente ("Que tu inversión tenga sentido", "Que funcione en tu día a día"); la sección "Aprender haciendo" pasa a "Qué ganas trabajando conmigo" (conocimiento del negocio, primera versión pronto, costes claros y honestidad sobre el apoyo especializado); la tarjeta del máster de BIG school se mantiene, en curso; cierre con Contacto y WhatsApp.
+
 ## Contacto
 
 Auditoría de Contacto hecha: WhatsApp es el primer canal y tiene un botón también junto a "Te responde Ismael", visible en la primera pantalla del móvil; el mensaje de WhatsApp y el correo se abren con tres preguntas preparadas ("Mi negocio es", "Me gustaría mejorar", "Ahora lo hago con"); se indica respuesta en menos de 24 horas (dato confirmado por Ismael); textos y descripción alineados con los tres servicios. Sin formularios: la web no recoge datos.
