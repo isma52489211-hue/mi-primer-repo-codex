@@ -10,12 +10,12 @@ Publicada con GitHub Pages desde `main`, carpeta `docs`.
 
 ## Servicios y portfolio
 
-La página de Servicios presenta tres servicios concretos y un área en formación:
+La página de Servicios presenta cuatro bloques (revisión basada en el documento de ChatGPT del 27 de octubre de 2026, aplicada con criterio):
 
-- **Web o tienda online**: estructura y textos, diseño para móvil, contacto directo y, si se vende online, catálogo y pago con la plataforma de tienda adecuada. No incluye fotografía profesional ni textos legales definitivos (los revisa la asesoría del cliente). Pruebas: María Flores PNI y Pescaderías Adolfo; todavía no hay una tienda online publicada que mostrar.
-- **Tu negocio conectado**: Google Business Profile, WhatsApp Business, Instagram y Facebook enlazados y alta de la web en Google.
-- **Aplicación a medida (primera versión)**: gestión, reservas y agendas, facturas, seguimiento de clientes…; se construye con IA y se prueba con casos reales. Si maneja pagos, datos sensibles, varios usuarios o se publica en tiendas de apps, se plantea con apoyo técnico especializado. Prueba: Pescadería Contable.
-- **IA y automatizaciones**: exploración y primeras pruebas, formación en curso.
+- **Web y contacto con tus clientes** (`#web`): web o página de servicio, Google Business Profile, WhatsApp Business y redes enlazados, tienda online según el caso (sin tienda publicada aún como prueba) y campañas de Meta Ads con objetivo definido, sin garantizar ventas. Pruebas: María Flores PNI y Pescaderías Adolfo.
+- **Contenido y documentos de marca** (`#documentos`): publicaciones, carruseles, guías y documentos en PDF con la identidad del negocio y plantillas editables. No incluye vídeo profesional ni diseño de marca desde cero.
+- **Herramientas para el trabajo diario** (`#apps`): primera versión para un proceso (compras, existencias, facturas, agenda, clientes, cierre diario) y paneles sencillos; con apoyo técnico si hay pagos, datos sensibles o varios usuarios. Prueba: Pescadería Contable.
+- **Asistentes y seguimientos con IA** (`#ia`): asistentes con instrucciones para una tarea, seguimientos periódicos con informe y acompañamiento; agentes, Make y n8n siguen en formación y las integraciones avanzadas se estudian aparte.
 
 Auditoría de Servicios hecha: H1 y título de Google con los nombres de los servicios ("Webs, negocio conectado y apps a medida. Para pequeños negocios."); un botón por servicio que abre WhatsApp con un mensaje ya escrito ("Quiero una web", "Quiero conectar mi negocio", "Quiero una app a medida"); el dominio se contrata a nombre del cliente; Pescaderías Adolfo como prueba de "Tu negocio conectado" (autorizado por Ismael); IA y automatizaciones como tarjeta secundaria ("También exploro"); cierre con botón de WhatsApp.
 
@@ -175,6 +175,7 @@ No hay `robots.txt` a propósito: los buscadores solo lo leen en la raíz del do
 2. **Precio orientativo de los servicios** (opcional): decidir si se publica un precio "desde", si se ofrece una primera conversación gratuita o solo presupuesto a medida. Los tres servicios concretos ya están en Servicios.
 3. **Vídeo corto** (opcional): 10–15 segundos de Pescadería Contable funcionando o de Ismael trabajando con IA, comprimido (menos de 1–2 MB), con imagen fija de respaldo y sin reproducción automática con "reducir movimiento". Las mejoras visuales (tarjetas, color, movimiento, tipografía, foto y capturas de los tres proyectos) están hechas.
 4. **Opiniones de clientes**: pedir a María Flores y a Pescaderías Adolfo una o dos frases reales sobre el trabajo, con permiso para publicarlas. Sin ellas no se publica ninguna opinión.
+5. **Nuevas pruebas para Proyectos** (paso 3 del documento de ChatGPT): app de facturas de Pescaderías Adolfo, editor de PDF y guía de descarga de María Flores PNI, documentos con su marca, un informe de seguimiento con IA. Hace falta una captura de cada uno con datos inventados, confirmar que es trabajo de Ismael y, en lo de María, su permiso. No publicar nada de esto sin ese material.
 
 ## Próximas mejoras
 
