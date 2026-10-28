@@ -115,7 +115,7 @@ Los elementos situados al final de una página no llevan animación de aparició
 
 ## Datos confirmados del inventario (28/10/2026)
 
-Contrastado con el inventario de memoria de Claude y confirmado por Ismael: la web de María Flores PNI la hizo él solo, sin IA; María atiende online y en consulta presencial en Lucena (las campañas de Lucena las lleva una agencia externa y no se atribuyen a Ismael); la ficha de Google de Pescaderías Adolfo en Baena pasó de cero a 40 reseñas con 5 estrellas (dato a actualizar si cambia). "Caja Pescadería" en Netlify era una prueba y no se publica. En Herramientas, Claude y ChatGPT describen el uso real: Proyectos, skills, conectores, Claude en Chrome, Claude Design, GPTs personalizados y modo agente.
+Contrastado con el inventario de memoria de Claude y confirmado por Ismael: la web de María Flores PNI la hizo él solo, sin IA; María atiende online y en consulta presencial en Lucena (las campañas de Lucena las lleva una agencia externa y no se atribuyen a Ismael); la ficha de Google de Pescaderías Adolfo en Baena pasó de cero a 40 reseñas con 5 estrellas (dato a actualizar si cambia; en Proyectos se muestra un recorte de la ficha, `resenas-google-adolfo.webp`, solo con la nota y el número, sin nombres de clientes). "Caja Pescadería" en Netlify era una prueba y no se publica. En Herramientas, Claude y ChatGPT describen el uso real: Proyectos, skills, conectores, Claude en Chrome, Claude Design, GPTs personalizados y modo agente.
 
 ## Herramientas (auditoría)
 
