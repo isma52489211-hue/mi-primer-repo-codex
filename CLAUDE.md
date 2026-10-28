@@ -20,7 +20,7 @@ Web personal y portfolio de Ismael (marca "ISMAEL · IA APLICADA"): soluciones d
 - Formación: "Estoy terminando el máster en IA de BIG school". No decir que ya lo tiene hasta que lo termine y lo confirme.
 - Experiencia: conoce la pescadería desde dentro; otros comercios de alimentación se presentan como "parecidos", no como experiencia directa.
 - Herramientas: se respetan los niveles declarados (uso práctico, uso acotado o con apoyo, formación). Agentes, Make, n8n, API y MCP figuran como aprendizaje.
-- Proyectos: María Flores PNI (web hecha por él, publicada), Pescaderías Adolfo (web hecha con ayuda de IA, publicada y en mejora) y Pescadería Contable (app propia en local, en desarrollo; calcula el beneficio neto del día sin gastos generales). Las capturas de la app usan datos inventados; nunca cifras reales del negocio.
+- Proyectos: María Flores PNI (web hecha por él solo, sin IA, publicada; consulta online y presencial en Lucena; las campañas de Lucena las lleva una agencia externa y no se atribuyen a Ismael), Pescaderías Adolfo (web hecha con ayuda de IA, publicada y en mejora; su ficha de Google de Baena tiene 40 reseñas con 5 estrellas a 28/10/2026, dato de Ismael: actualizarlo si cambia) y Pescadería Contable (app propia en local, en desarrollo; calcula el beneficio neto del día sin gastos generales). Las capturas de la app usan datos inventados; nunca cifras reales del negocio.
 - Personas en imágenes: María Flores y el personal de Pescaderías Adolfo dieron permiso. Para cualquier imagen nueva con personas, confirmar el permiso.
 - El aviso legal (`aviso-legal.html`) contiene datos reales del titular; no cambiarlos sin que él lo pida. `build.py` se detiene si una página contiene "PENDIENTE".
 
