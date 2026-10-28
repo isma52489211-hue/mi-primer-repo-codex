@@ -113,6 +113,10 @@ Como en la portada, el contenido de las páginas interiores va en tarjetas (bord
 
 Los elementos situados al final de una página no llevan animación de aparición: en pantallas altas no siempre pueden subir lo suficiente para completarla.
 
+## Datos confirmados del inventario (28/10/2026)
+
+Contrastado con el inventario de memoria de Claude y confirmado por Ismael: la web de María Flores PNI la hizo él solo, sin IA; María atiende online y en consulta presencial en Lucena (las campañas de Lucena las lleva una agencia externa y no se atribuyen a Ismael); la ficha de Google de Pescaderías Adolfo en Baena pasó de cero a 40 reseñas con 5 estrellas (dato a actualizar si cambia). "Caja Pescadería" en Netlify era una prueba y no se publica. En Herramientas, Claude y ChatGPT describen el uso real: Proyectos, skills, conectores, Claude en Chrome, Claude Design, GPTs personalizados y modo agente.
+
 ## Herramientas (auditoría)
 
 Auditoría de Herramientas hecha, con el cliente en el centro: H1 "Herramientas al servicio de tu negocio."; cada categoría explica "Qué gana tu negocio" en lugar de "Para qué me sirven"; "La IA ayuda. Tú recibes algo revisado."; "Lo que sigo aprendiendo" se resume en "En formación" (agentes, Make, n8n, API y MCP, aplicados solo cuando estén probados); cierre con Contacto y WhatsApp. Los niveles de cada herramienta no cambian.
