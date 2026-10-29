@@ -96,7 +96,7 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 - **Proyectos destacados**: cada proyecto con miniatura real y una frase concreta.
 - **Cierre**: botones "Cuéntame tu idea" y "Escribir por WhatsApp".
 
-Auditoría de Inicio hecha (primera de la revisión página a página). En ella se eliminaron del CSS unas 130 reglas de diseños anteriores que ya no se usaban (de 62 a 54 KB), comprobando con capturas que no cambia nada visible.
+Auditoría de Inicio hecha (primera de la revisión página a página). En ella se eliminaron del CSS unas 130 reglas de diseños anteriores que ya no se usaban (de 62 a 54 KB), comprobando con capturas que no cambia nada visible. Tras pasar Proyectos al scroll narrativo (29/10/2026) se quitaron otros 109 selectores de 27 clases que ya no usaba ninguna página (fichas antiguas de proyectos, miniaturas, la ventana de la app y restos anteriores) y la animación `shot-tilt`: de 67 a 60 KB, con las 21 capturas de comparación (7 páginas en 3 tamaños) idénticas píxel a píxel.
 
 ## Proyectos (scroll narrativo)
 
