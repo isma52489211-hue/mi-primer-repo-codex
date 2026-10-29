@@ -11,7 +11,7 @@ Cada experimento es una página independiente que usa las imágenes y la tipogra
 | 03 | Proyectos en 3D: carrusel en profundidad que se desliza con el dedo, el ratón o las flechas; cada tarjeta se gira para contar el reto, qué hice y qué tiene ahora | `03-proyectos-3d.html` | ❓ En duda: le gusta, pero menos que el 02 (29/10/2026) |
 | 04 | Cursor y microinteracciones: cursor propio, botones imán, tarjetas con brillo e inclinación, ondas al pulsar | `04-cursor-microinteracciones.html` | ⏸️ Aparcado: Ismael lo revisará en el ordenador (29/10/2026) |
 | 05 | Modo claro y oscuro: interruptor animado (luna y sol), la página cambia con un círculo que se abre desde el botón; usa el modo del dispositivo y recuerda la elección | `05-modo-claro-oscuro.html` | ❓ En duda (29/10/2026) |
-| 06 | Asistente simulado: chat de demostración con respuestas preparadas a partir de los textos de la web; se presenta como demostración y lleva siempre al contacto | `06-asistente-simulado.html` | 🧪 En prueba |
+| 06 | Asistente simulado: chat de demostración con respuestas preparadas a partir de los textos de la web; se presenta como demostración y lleva siempre al contacto | `06-asistente-simulado.html` | ❓ En duda (29/10/2026) |
 
 Ya se han hecho los seis experimentos propuestos.
 
