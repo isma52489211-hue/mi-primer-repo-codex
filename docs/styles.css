@@ -254,3 +254,37 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .review-proof{margin:14px 0 0;max-width:360px}
 .review-proof img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #ffffff1f;background:#131314}
 .review-proof figcaption{margin-top:6px;font-size:12px;color:var(--muted)}
+/* ===== Portada cinematográfica (aprobada en el laboratorio, experimento 01) ===== */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.hero-cine{position:relative;isolation:isolate}
+.hero-particles{position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;translate:-50% 0;pointer-events:none;
+  -webkit-mask:linear-gradient(#0000,#000 60px,#000 calc(100% - 110px),#0000);mask:linear-gradient(#0000,#000 60px,#000 calc(100% - 110px),#0000)}
+.hero-words,.hero-words .w{color:var(--ink)}
+.hero-words .w{display:inline-block}
+.hero-words .g1,.hero-words .g2,.hero-words .g3{-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em;margin-bottom:-.08em}
+.hero-words .g1{background-image:linear-gradient(100deg,#c7b2ff,#b497ff)}
+.hero-words .g2{background-image:linear-gradient(100deg,#b497ff,#7fd3e6)}
+.hero-words .g3{background-image:linear-gradient(100deg,#7fd3e6,#ff9d8a)}
+.hero-cine .hero-title{perspective:600px}
+.hero-cine .hero-visual{perspective:1100px}
+.hero-tilt{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+.hero-halo{position:absolute;inset:8% 14% 4%;border-radius:50%;filter:blur(50px);opacity:.4;transform:translateZ(-60px);pointer-events:none;
+  background:conic-gradient(from 200deg,#b497ff,#7fd3e6,#ff9d8a,#b497ff)}
+.hero-glare{position:absolute;inset:0;z-index:2;pointer-events:none;mix-blend-mode:soft-light;opacity:.35;
+  background:radial-gradient(circle at var(--gx,50%) var(--gy,25%),#ffffff8c,transparent 55%)}
+.hero-cine .fc-1{transform:translateZ(var(--z1,50px))}
+.hero-cine .fc-2{transform:translateZ(var(--z2,55px))}
+.hero-cine .float-badge{transform:translateZ(var(--z3,70px))}
+@media(max-width:1050px){.hero-cine{--z1:20px;--z2:40px;--z3:36px}}
+@media(min-width:761px) and (max-width:1050px){.hero-cine .fc-1{bottom:46px}}
+@media(prefers-reduced-motion:no-preference){
+  .hero-words .w{animation:hero-word 1s cubic-bezier(.2,.75,.15,1) both;animation-delay:calc(var(--i) * 95ms + 150ms)}
+  .hero-cine .intro{animation:hero-up .9s .95s cubic-bezier(.2,.75,.15,1) both}
+  .hero-cine .hero-actions{animation:hero-up .9s 1.1s cubic-bezier(.2,.75,.15,1) both}
+  .hero-cine .hero-chips{animation:hero-up .9s 1.25s cubic-bezier(.2,.75,.15,1) both}
+  .hero-cine .hero-visual{animation:hero-up 1.1s .4s cubic-bezier(.2,.75,.15,1) both}
+}
+@media(hover:none) and (prefers-reduced-motion:no-preference){.hero-tilt.auto{animation:hero-drift 7s ease-in-out infinite}}
+@keyframes hero-word{from{opacity:0;transform:translateY(.55em) rotateX(-70deg);filter:blur(14px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes hero-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes hero-drift{0%,100%{transform:rotateX(4deg) rotateY(-7deg)}50%{transform:rotateX(-3deg) rotateY(7deg)}}

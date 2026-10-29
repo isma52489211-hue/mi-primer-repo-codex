@@ -86,11 +86,12 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 - **Portada tipo bento**: "Cómo puedo ayudarte" es una cuadrícula de bloques de distintos tamaños: IA aplicada (bloque grande con una animación de órbitas alrededor de la marca), presencia digital, gestión, formación (máster en IA de BIG school, en curso), herramientas con uso real y método de trabajo. Todo el contenido procede de las otras páginas.
 - **Foto de Ismael**: retrato en Sobre mí (a la derecha en escritorio, tras el texto en móvil) con degradado y pie con su nombre, y protagonista de la portada. Archivos WebP sin metadatos: `ismael-720.webp` (38 KB) e `ismael-480.webp` (18 KB, móvil, vía `srcset`). `build.py` valida también las imágenes enlazadas.
 
-## Portada (propuesta "Retrato")
+## Portada (propuesta "Retrato", versión cinematográfica)
 
 - **H1**: "Soluciones digitales para pequeños negocios." con degradado; lema "Experiencia de negocio · IA aplicada" encima. Título de pestaña, Open Graph y descripción para Google alineados con los servicios.
-- **Llamada a la acción** en la primera pantalla: botón "Cuéntame tu idea" (Contacto) y enlace "Ver proyectos".
+- **Llamada a la acción** en la primera pantalla: botones "Cuéntame tu idea" (Contacto) y "Escríbeme por WhatsApp".
 - **Visual**: foto de Ismael en arco con las capturas de sus webs y la tarjeta de Pescadería Contable flotando alrededor (sin tapar la cara), enlazadas a cada proyecto. Etiquetas: "Webs y tiendas online", "Tu negocio conectado", "Apps a medida".
+- **Versión cinematográfica** (experimento 01 del laboratorio, aprobado el 29/10/2026): el titular entra palabra a palabra con desenfoque y giro; detrás hay una red de partículas con los colores de marca que se aparta y se conecta con el ratón o el dedo; la foto se inclina en 3D con un reflejo de luz y las tarjetas flotan a distintas profundidades. En móvil la foto flota sola y sigue el dedo; en Android también sigue la inclinación del teléfono (en iPhone haría falta pedir permiso al visitante, así que no se usa). Las partículas se pausan cuando la portada no se ve. Con "reducir movimiento" no hay animaciones: las partículas quedan quietas y la foto recta. Código en `site.js` (bloque "Portada") y estilos al final de `styles.css`.
 - **Cómo puedo ayudarte** (bento): bloque grande "IA aplicada a tu negocio" como enfoque de trabajo; los tres servicios con su color (morado, turquesa, coral) enlazados a su sección de Servicios; formación, herramientas y método.
 - **Proyectos destacados**: cada proyecto con miniatura real y una frase concreta.
 - **Cierre**: botones "Cuéntame tu idea" y "Escribir por WhatsApp".
