@@ -7,9 +7,10 @@ Cada experimento es una página independiente que usa las imágenes y la tipogra
 | Nº | Experimento | Archivo | Estado |
 |---|---|---|---|
 | 01 | Portada cinematográfica: titular palabra a palabra, partículas que reaccionan al ratón o al dedo, foto con inclinación 3D y tarjetas flotantes | `01-portada-cinematografica.html` | ✅ **Aprobado para pasar a la web** (29/10/2026) |
-| 04 | Cursor y microinteracciones: cursor propio, botones imán, tarjetas con brillo e inclinación, ondas al pulsar | `04-cursor-microinteracciones.html` | ❓ En duda: a Ismael no le convence (29/10/2026) |
+| 02 | Scroll narrativo: cada proyecto se cuenta en tres pasos (el reto, qué hice, qué tiene ahora) mientras la captura se queda fija y cambia | `02-scroll-narrativo.html` | 🧪 En prueba |
+| 04 | Cursor y microinteracciones: cursor propio, botones imán, tarjetas con brillo e inclinación, ondas al pulsar | `04-cursor-microinteracciones.html` | ⏸️ Aparcado: Ismael lo revisará en el ordenador (29/10/2026) |
 
-Experimentos propuestos que aún no se han hecho: 02 scroll narrativo, 03 proyectos en 3D, 05 modo claro/oscuro, 06 asistente simulado.
+Experimentos propuestos que aún no se han hecho: 03 proyectos en 3D, 05 modo claro/oscuro, 06 asistente simulado.
 
 ## Al pasar algo aprobado a la web
 
