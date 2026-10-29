@@ -98,6 +98,10 @@ Con "reducir movimiento" activado en el dispositivo no hay ninguna animación. E
 
 Auditoría de Inicio hecha (primera de la revisión página a página). En ella se eliminaron del CSS unas 130 reglas de diseños anteriores que ya no se usaban (de 62 a 54 KB), comprobando con capturas que no cambia nada visible.
 
+## Proyectos (scroll narrativo)
+
+Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
+
 ## Estilo unificado
 
 El resto de páginas comparte el lenguaje visual de la portada: la parte destacada de cada título principal y de los títulos de cierre lleva el degradado morado, turquesa y coral; todas tienen el fondo vivo (más suave que en Inicio); los accesos rápidos internos son pastillas translúcidas con brillo al pasar el ratón; y los bloques de cierre de cada página tienen fondo de color y bordes redondeados. En Contacto, una foto pequeña de Ismael acompaña al título ("Te responde Ismael").

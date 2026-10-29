@@ -114,6 +114,51 @@
     }, { passive: true });
   }
 
+  // Proyectos: cada historia avanza (reto, qué hice, qué tiene ahora) según el paso que cruza el centro de la pantalla.
+  const chapters = [...document.querySelectorAll('.story-chapter')];
+  if (chapters.length) {
+    const bar = document.querySelector('.story-progress');
+    const setTop = () => document.documentElement.style.setProperty('--story-top', `${header.offsetHeight}px`);
+    setTop();
+    window.addEventListener('resize', setTop);
+    chapters.forEach(ch => ch.querySelector('.story-step').classList.add('active'));
+    const onStep = entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const ch = entry.target.closest('.story-chapter');
+        ch.dataset.step = entry.target.dataset.n;
+        ch.querySelectorAll('.story-step').forEach(s => s.classList.toggle('active', s === entry.target));
+      }
+    };
+    // La línea que activa cada paso: el centro de la pantalla o, en móvil, el centro del hueco que deja la captura fija.
+    let steps = null;
+    const watchSteps = () => {
+      if (steps) steps.disconnect();
+      const oneColumn = window.matchMedia('(max-width: 860px)').matches;
+      const covered = oneColumn ? header.offsetHeight + chapters[0].querySelector('.story-visual').offsetHeight : 0;
+      const line = Math.round((covered + innerHeight) / 2);
+      steps = new IntersectionObserver(onStep, { rootMargin: `-${line}px 0px -${innerHeight - line - 1}px 0px` });
+      document.querySelectorAll('.story-step').forEach(s => steps.observe(s));
+    };
+    watchSteps();
+    let stepsTimer = 0;
+    window.addEventListener('resize', () => { clearTimeout(stepsTimer); stepsTimer = setTimeout(watchSteps, 200); });
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const max = document.documentElement.scrollHeight - innerHeight;
+      bar.style.setProperty('--p', max > 0 ? (scrollY / max).toFixed(4) : 0);
+      for (const ch of chapters) {
+        const box = ch.getBoundingClientRect();
+        const p = Math.min(1, Math.max(0, (innerHeight * .6 - box.top) / (box.height - innerHeight * .4)));
+        ch.querySelector('.story-num').style.setProperty('--fill', `${(p * 100).toFixed(1)}%`);
+      }
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   // Portada: partículas que reaccionan al puntero y foto con inclinación 3D.
   const hero = document.querySelector('.hero-cine');
   if (hero) {

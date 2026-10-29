@@ -292,3 +292,63 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 .hero-cine .fc-2 img{aspect-ratio:640/327;object-fit:cover;object-position:top}
 @media(max-width:760px){.hero-cine .fc-2{bottom:84px}}
 @media(min-width:561px) and (max-width:760px){.hero-cine .float-card{width:38%}}
+/* ===== Proyectos: scroll narrativo (aprobado en el laboratorio, experimento 02) ===== */
+.story-progress{position:fixed;left:0;top:0;z-index:40;width:100%;height:3px;transform-origin:left;transform:scaleX(var(--p,0));pointer-events:none;background:linear-gradient(90deg,#b497ff,#7fd3e6,#ff9d8a)}
+.story-chapter{position:relative;padding-block:46px 30px;border-top:1px solid var(--line)}
+.story-head{display:flex;align-items:flex-start;gap:clamp(16px,3vw,34px);margin-bottom:30px}
+.story-head .eyebrow{margin-bottom:12px}
+.story-head h2{font-size:clamp(32px,4.4vw,54px);letter-spacing:-1.8px;line-height:1.04;margin:0 0 14px}
+.story-head .portfolio-position{margin:16px 0 0;max-width:520px}
+.status-dev{border-color:#6a3f3a;color:#ffb8aa}
+.story-num{font-size:clamp(76px,11vw,148px);line-height:.8;font-weight:800;letter-spacing:-.06em;flex:none;-webkit-text-stroke:1.5px #b497ff8c;color:transparent;
+  background:linear-gradient(0deg,#b497ff 0 var(--fill,0%),transparent var(--fill,0%));-webkit-background-clip:text;background-clip:text}
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:start}
+.story-visual{position:sticky;top:calc(var(--story-top,88px) + 24px)}
+.story-frame{border:1px solid #3d3150;border-radius:16px;overflow:hidden;background:#18141e;box-shadow:0 40px 90px -40px #000,0 0 70px -30px #b497ff73}
+.story-screen{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0c0c10}
+.story-layer{position:absolute;inset:0;transition:opacity .7s cubic-bezier(.2,.75,.15,1),transform .9s cubic-bezier(.2,.75,.15,1),filter .7s cubic-bezier(.2,.75,.15,1)}
+.story-layer img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.story-after{opacity:0}
+.story-need{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;opacity:0;transform:translateY(16px);transition:opacity .6s,transform .7s cubic-bezier(.2,.75,.15,1);pointer-events:none}
+.story-need p{margin:0;max-width:15em;font-size:clamp(19px,2.3vw,27px);font-weight:650;letter-spacing:-.02em;line-height:1.2;text-shadow:0 2px 24px #000c}
+.story-need small{display:block;font-size:12px;letter-spacing:1.8px;color:#7fd3e6;margin-bottom:10px;font-weight:600;text-shadow:none}
+.story-tags{position:absolute;left:12px;right:12px;bottom:12px;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none}
+.story-tags span{font-size:12px;font-weight:550;padding:5px 10px;border-radius:999px;background:#101014db;backdrop-filter:blur(8px);border:1px solid #b497ff59;opacity:0;transform:translateY(10px);transition:opacity .45s,transform .5s cubic-bezier(.2,.75,.15,1);transition-delay:calc(var(--i) * 90ms)}
+.story-tags.t3 span{border-color:#a3d8bb73;color:#a3d8bb}
+.story-review{position:absolute;right:12px;top:12px;width:min(58%,300px);height:auto;border-radius:10px;border:1px solid #ffffff33;box-shadow:0 18px 40px -12px #000e;opacity:0;transform:translateY(-12px) scale(.96);transition:opacity .5s .15s,transform .6s .15s cubic-bezier(.2,.75,.15,1)}
+.story-dots{display:flex;gap:8px;margin-top:14px}
+.story-dots span{flex:1;height:4px;border-radius:4px;background:#ffffff1a;overflow:hidden;position:relative}
+.story-dots span::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#b497ff,#7fd3e6);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.75,.15,1)}
+/* Estados según el paso activo (solo con JavaScript; sin él se ve la captura limpia) */
+.js .story-chapter[data-step="1"] .story-base{filter:grayscale(1) blur(3px) brightness(.38);transform:scale(1.12)}
+.js .story-chapter[data-step="1"] .story-need{opacity:1;transform:none}
+.js .story-chapter[data-step="2"] .t2 span,.js .story-chapter[data-step="3"] .t3 span{opacity:1;transform:none}
+.js .story-chapter[data-step="3"] .story-after,.js .story-chapter[data-step="3"] .story-review{opacity:1;transform:none}
+.js .story-chapter[data-step="1"] .story-dots span:nth-child(-n+1)::after,.js .story-chapter[data-step="2"] .story-dots span:nth-child(-n+2)::after,.js .story-chapter[data-step="3"] .story-dots span::after{transform:scaleX(1)}
+html:not(.js) .story-review,html:not(.js) .story-tags.t3 span{opacity:1;transform:none}
+.story-steps{display:flex;flex-direction:column;gap:18px;padding-bottom:10vh}
+.story-step{min-height:58vh;display:flex;align-items:center}
+.story-card{position:relative;padding:26px 26px 26px 30px;border-radius:20px;border:1px solid #3a2f4a;background:#18141e8c;transition:border-color .5s,background .5s,transform .6s cubic-bezier(.2,.75,.15,1),box-shadow .5s}
+.story-card::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:3px;border-radius:3px;background:linear-gradient(#b497ff,#7fd3e6);transform:scaleY(0);transition:transform .6s cubic-bezier(.2,.75,.15,1)}
+.story-step.active .story-card{border-color:#b497ff66;background:#18141e;transform:translateX(6px);box-shadow:0 30px 60px -36px #000e}
+.story-step.active .story-card::before{transform:scaleY(1)}
+.story-k{font-size:12px;letter-spacing:1.8px;color:var(--muted);margin:0 0 6px}
+.story-k b{color:var(--purple);font-weight:650}
+.story-card h3{margin:0 0 10px;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.6px;line-height:1.2}
+.story-card p{margin:0;color:#c3bdcc;font-size:clamp(16px,1.4vw,18px);line-height:1.7}
+.story-card .story-note{font-size:13px;color:var(--muted);margin-top:12px}
+.story-card .button{margin-top:20px}
+.story-takeaway{max-width:520px}
+@media(max-width:860px){
+  .story{grid-template-columns:1fr;gap:0}
+  .story-visual{top:var(--story-top,76px);z-index:5;padding-block:10px 14px;background:linear-gradient(var(--bg) 85%,#10101400)}
+  .story-screen{aspect-ratio:16/9}
+  .story-need p{font-size:18px}
+  .story-dots{margin-top:10px}
+  .story-step{min-height:46vh}
+  .story-step.active .story-card{transform:none}
+  .story-steps{padding-bottom:6vh}
+  .story-review{width:62%}
+}
+@media(max-width:480px){.story-head{align-items:center}.story-tags{left:8px;right:8px;bottom:8px;gap:4px}.story-tags span{padding:4px 8px}.story-card{padding:22px 20px 22px 24px}}
+@media(prefers-reduced-motion:reduce){.story-layer,.story-need,.story-tags span,.story-review,.story-dots span::after,.story-card,.story-card::before{transition:none}}
