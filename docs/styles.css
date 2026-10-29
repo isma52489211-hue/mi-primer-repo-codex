@@ -288,3 +288,7 @@ body:not([data-page="inicio"]) main::before{content:"";position:absolute;z-index
 @keyframes hero-word{from{opacity:0;transform:translateY(.55em) rotateX(-70deg);filter:blur(14px)}to{opacity:1;transform:none;filter:blur(0)}}
 @keyframes hero-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes hero-drift{0%,100%{transform:rotateX(4deg) rotateY(-7deg)}50%{transform:rotateX(-3deg) rotateY(7deg)}}
+/* Tarjeta de Pescaderías Adolfo: mismo formato que la de María y, en móvil, a la altura del pecho */
+.hero-cine .fc-2 img{aspect-ratio:640/327;object-fit:cover;object-position:top}
+@media(max-width:760px){.hero-cine .fc-2{bottom:84px}}
+@media(min-width:561px) and (max-width:760px){.hero-cine .float-card{width:38%}}
