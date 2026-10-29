@@ -1,0 +1,215 @@
+<title>Modo claro y oscuro</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+@font-face{font-family:"Geist";src:url("geist.woff2") format("woff2");font-weight:100 900;font-display:swap}
+/* Oscuro: los colores de la web actual */
+:root{
+  color-scheme:dark;
+  --bg:#101014;--panel:#17161d;--panel-2:#1d1c24;--line:rgba(244,242,248,.1);
+  --text:#f4f2f8;--muted:#b1abba;--violet:#b497ff;--teal:#7fd3e6;--coral:#ff9d8a;--green:#a3d8bb;
+  --btn-text:#141019;--shadow:rgba(0,0,0,.9);--glow:rgba(180,151,255,.45);
+  --aurora-1:rgba(180,151,255,.16);--aurora-2:rgba(127,211,230,.1);--aurora-3:rgba(255,157,138,.08);
+  --gutter:max(16px,env(safe-area-inset-left),env(safe-area-inset-right));
+  --ease:cubic-bezier(.2,.75,.15,1);
+}
+/* Claro: misma marca, tonos más profundos para que se lean sobre fondo blanco */
+:root[data-modo="claro"]{
+  color-scheme:light;
+  --bg:#f7f5fb;--panel:#ffffff;--panel-2:#f0edf7;--line:rgba(23,21,28,.1);
+  --text:#17151c;--muted:#5b5664;--violet:#6a48d6;--teal:#17788c;--coral:#c24a33;--green:#2f7a55;
+  --btn-text:#ffffff;--shadow:rgba(60,40,110,.22);--glow:rgba(106,72,214,.25);
+  --aurora-1:rgba(106,72,214,.12);--aurora-2:rgba(23,120,140,.1);--aurora-3:rgba(194,74,51,.07);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font-family:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background:radial-gradient(55% 40% at 10% 0%,var(--aurora-1),transparent 70%),radial-gradient(45% 35% at 95% 10%,var(--aurora-2),transparent 70%),radial-gradient(40% 30% at 60% 60%,var(--aurora-3),transparent 70%),var(--bg)}
+a{color:inherit}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+.wrap{width:min(1180px,100%);margin:0 auto;padding-inline:var(--gutter)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.grad{background:linear-gradient(100deg,var(--violet),var(--teal) 55%,var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Cabecera con el interruptor */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px}
+.brand{font-weight:700;letter-spacing:.08em;font-size:14px;text-decoration:none;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}
+.brand span{color:var(--violet);margin-left:.35em}
+.right{display:flex;align-items:center;gap:10px}
+.lab{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.lab b{color:var(--teal);font-weight:600}
+
+.toggle{position:relative;width:76px;height:44px;border-radius:999px;border:1px solid var(--line);background:var(--panel-2);cursor:pointer;padding:0;flex:none;
+  box-shadow:inset 0 2px 6px rgba(0,0,0,.15)}
+.knob{position:absolute;top:4px;left:4px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(140deg,#2a2735,#17161d);color:#f4f2f8;box-shadow:0 4px 12px rgba(0,0,0,.4);
+  transition:transform .6s var(--ease),background .5s}
+[data-modo="claro"] .knob{transform:translateX(32px);background:linear-gradient(140deg,#ffd27a,#ff9d8a);color:#3a2a10}
+.knob svg{position:absolute;transition:transform .6s var(--ease),opacity .4s}
+.knob .sun{opacity:0;transform:rotate(-90deg) scale(.4)}
+[data-modo="claro"] .knob .sun{opacity:1;transform:none}
+[data-modo="claro"] .knob .moon{opacity:0;transform:rotate(90deg) scale(.4)}
+.stars{position:absolute;right:12px;top:50%;transform:translateY(-50%);display:flex;gap:3px;transition:opacity .4s}
+.stars i{width:3px;height:3px;border-radius:50%;background:var(--muted)}
+.stars i:nth-child(2){transform:translateY(-5px)}
+.rays{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;border-radius:50%;border:2px dotted var(--muted);opacity:0;transition:opacity .4s}
+[data-modo="claro"] .stars{opacity:0}
+[data-modo="claro"] .rays{opacity:1}
+
+/* Portada */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(24px,5vw,56px) clamp(32px,5vw,64px)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.14em;color:var(--muted);margin:0 0 18px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green)}
+h1{font-size:clamp(40px,6.6vw,84px);line-height:.98;letter-spacing:-.045em;font-weight:700;margin:0 0 22px}
+.intro{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:34em;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--violet);color:var(--btn-text);box-shadow:0 10px 36px -12px var(--glow)}
+.btn-wa{border:1px solid color-mix(in srgb,var(--green) 55%,transparent);color:var(--green);background:color-mix(in srgb,var(--green) 8%,transparent)}
+.photo{justify-self:center;width:min(100%,380px);border-radius:190px 190px 26px 26px;overflow:hidden;aspect-ratio:4/5;
+  box-shadow:0 40px 80px -36px var(--shadow),0 0 0 1px color-mix(in srgb,var(--violet) 40%,transparent),0 0 70px -24px var(--glow)}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+/* Servicios */
+.services h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.035em;line-height:1.05;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{border-radius:22px;padding:22px;border:1px solid var(--line);background:var(--panel);box-shadow:0 24px 50px -36px var(--shadow);transition:transform .4s var(--ease)}
+.card:hover{transform:translateY(-4px)}
+.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;color:var(--violet);
+  background:color-mix(in srgb,var(--violet) 12%,transparent);border:1px solid color-mix(in srgb,var(--violet) 28%,transparent)}
+.num{font-size:12px;letter-spacing:.12em;color:var(--muted)}
+.card h3{font-size:19px;letter-spacing:-.02em;margin:6px 0 6px;line-height:1.25}
+.card p{margin:0;color:var(--muted);font-size:15px}
+
+/* Proyecto */
+.project{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,48px);align-items:center;border-radius:28px;padding:clamp(20px,3vw,32px);
+  border:1px solid var(--line);background:var(--panel);box-shadow:0 30px 60px -40px var(--shadow)}
+.shot{border-radius:16px;overflow:hidden;border:1px solid color-mix(in srgb,var(--violet) 35%,transparent)}
+.kind{font-size:12px;letter-spacing:.12em;color:var(--muted);margin:0 0 8px}
+.project h3{font-size:clamp(24px,3vw,32px);letter-spacing:-.03em;margin:0 0 10px}
+.project p{color:var(--muted);margin:0 0 14px}
+.stars-line{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--text)}
+.stars-line{flex-wrap:wrap}
+.stars-line b{color:#e0a100;white-space:nowrap}
+[data-modo="claro"] .stars-line b{color:#8a5600}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--green);margin-left:14px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+
+/* Notas del experimento (al final, sin revelado) */
+.notes{padding-block:56px 72px}
+.notes h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.03em;margin:0 0 8px}
+.notes>p{color:var(--muted);margin:0 0 22px;max-width:44em}
+.list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0;padding:0;list-style:none}
+.list li{border:1px solid var(--line);border-radius:18px;padding:18px;color:var(--muted);font-size:15px;background:var(--panel)}
+.list b{display:block;color:var(--text);margin-bottom:4px;font-size:16px}
+.swatches{display:flex;gap:6px;margin-top:10px}
+.swatches i{width:22px;height:22px;border-radius:7px;border:1px solid var(--line)}
+
+/* Cambio de modo con un círculo que se abre desde el interruptor */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-new(root){animation:reveal .75s var(--ease)}
+@keyframes reveal{from{clip-path:circle(0 at var(--ox,90%) var(--oy,30px))}to{clip-path:circle(var(--or,150%) at var(--ox,90%) var(--oy,30px))}}
+
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.list{grid-template-columns:1fr}}
+@media (max-width:760px){.hero,.project{grid-template-columns:1fr}.photo{width:min(72%,300px)}}
+@media (max-width:480px){
+  .lab{display:none}
+  .grid{grid-template-columns:1fr}
+  .btn{width:100%;justify-content:center}
+  .status{margin-left:0;margin-top:8px;display:flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+}
+</style>
+
+<header class="wrap top">
+  <a class="brand" href="https://isma52489211-hue.github.io/mi-primer-repo-codex/" target="_blank" rel="noopener">ISMAEL<span>· IA APLICADA</span></a>
+  <div class="right">
+    <span class="lab">Laboratorio · <b>Experimento 05</b></span>
+    <button class="toggle" id="toggle" type="button" aria-pressed="false" aria-label="Modo claro">
+      <span class="stars" aria-hidden="true"><i></i><i></i><i></i></span><span class="rays" aria-hidden="true"></span>
+      <span class="knob" aria-hidden="true">
+        <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+        <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      </span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow"><i></i>EXPERIENCIA DE NEGOCIO + IA APLICADA</p>
+    <h1>Soluciones digitales <span class="grad">para pequeños negocios.</span></h1>
+    <p class="intro">Que te encuentren, que te escriban y que tu día a día sea más sencillo. Lo consigo con webs, contenido, herramientas y asistentes creados con IA, desde mi experiencia como empresario.</p>
+    <div class="ctas">
+      <a class="btn btn-main" href="https://isma52489211-hue.github.io/mi-primer-repo-codex/contacto.html" target="_blank" rel="noopener">Cuéntame tu idea<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      <a class="btn btn-wa" href="https://wa.me/34687485316?text=Hola%20Ismael.%0AMi%20negocio%20es%3A%20%0AMe%20gustar%C3%ADa%20mejorar%3A%20%0AAhora%20lo%20hago%20con%3A%20" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Escríbeme por WhatsApp</a>
+    </div>
+  </div>
+  <div class="photo"><img src="ismael-720.webp" width="720" height="900" alt="Ismael, de frente, con gafas y chaqueta azul marino"></div>
+</section>
+
+<section class="wrap services" aria-labelledby="services-title">
+  <h2 id="services-title">De lo que necesitas <span class="grad">a algo útil para tu negocio.</span></h2>
+  <div class="grid">
+    <article class="card"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="num">01 / WEB Y CONTACTO</span><h3>Que te encuentren. Que te escriban.</h3><p>Tu web, Google, WhatsApp y redes llevando al mismo contacto.</p></article>
+    <article class="card"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><span class="num">02 / CONTENIDO</span><h3>Que se entienda lo que vendes.</h3><p>Publicaciones, guías y documentos con la imagen de tu negocio.</p></article>
+    <article class="card"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M2 8h20"/><path d="M6 4v4"/></svg></span><span class="num">03 / HERRAMIENTAS</span><h3>La herramienta que te falta.</h3><p>Gestión, reservas, facturas o clientes, probada con casos reales.</p></article>
+    <article class="card"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/></svg></span><span class="num">04 / IA APLICADA</span><h3>Experiencia de negocio. Herramientas de IA.</h3><p>Primero entiendo tu negocio. Después uso la IA para construir antes y probar con tus casos reales.</p></article>
+  </div>
+
+  <article class="project">
+    <div class="shot"><img src="captura-adolfo-640.webp" width="640" height="556" alt="Portada de la web de Pescaderías Adolfo"></div>
+    <div>
+      <p class="kind">PROYECTO · WEB DE NEGOCIO</p>
+      <h3>Pescaderías Adolfo</h3>
+      <p>Un comercio de toda la vida que quería llevar su día a día a internet: catálogo, tiendas, historia y encargos por WhatsApp.</p>
+      <span class="stars-line"><b>5,0 ★★★★★</b>40 reseñas en Google (Baena)</span><span class="status">Publicada · En mejora</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap notes" aria-labelledby="notes-title">
+  <h2 id="notes-title">Qué estamos probando</h2>
+  <p>Pulsa el interruptor de arriba a la derecha. La página cambia de modo con un círculo que se abre desde el botón.</p>
+  <ul class="list">
+    <li><b>Un modo claro de verdad</b>No es invertir colores: el morado, el turquesa y el coral se oscurecen para que se lean bien sobre blanco.<span class="swatches" aria-hidden="true"><i style="background:var(--violet)"></i><i style="background:var(--teal)"></i><i style="background:var(--coral)"></i><i style="background:var(--green)"></i></span></li>
+    <li><b>Respeta al visitante</b>La primera vez usa el modo que tenga el móvil o el ordenador, y luego recuerda la elección.</li>
+    <li><b>Interruptor animado</b>La luna se convierte en sol y el fondo del botón pasa de estrellas a rayos.</li>
+  </ul>
+</section>
+</main>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const btn = document.getElementById('toggle');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let saved = null;
+  try { saved = localStorage.getItem('modo'); } catch (e) {}
+  const start = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'claro' : 'oscuro');
+
+  function apply(modo) {
+    if (modo === 'claro') root.dataset.modo = 'claro'; else delete root.dataset.modo;
+    btn.setAttribute('aria-pressed', modo === 'claro');
+  }
+  apply(start);
+
+  btn.addEventListener('click', () => {
+    const next = root.dataset.modo === 'claro' ? 'oscuro' : 'claro';
+    try { localStorage.setItem('modo', next); } catch (e) {}
+    if (reduce || !document.startViewTransition) { apply(next); return; }
+    // El círculo nace en el centro del interruptor y crece hasta cubrir la pantalla
+    const r = btn.getBoundingClientRect();
+    const x = r.left + r.width / 2, y = r.top + r.height / 2;
+    root.style.setProperty('--ox', x + 'px');
+    root.style.setProperty('--oy', y + 'px');
+    root.style.setProperty('--or', Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + 'px');
+    document.startViewTransition(() => apply(next));
+  });
+})();
+</script>

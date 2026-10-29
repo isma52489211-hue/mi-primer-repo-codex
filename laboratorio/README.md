@@ -8,10 +8,11 @@ Cada experimento es una página independiente que usa las imágenes y la tipogra
 |---|---|---|---|
 | 01 | Portada cinematográfica: titular palabra a palabra, partículas que reaccionan al ratón o al dedo, foto con inclinación 3D y tarjetas flotantes | `01-portada-cinematografica.html` | ✅ **Aprobado para pasar a la web** (29/10/2026) |
 | 02 | Scroll narrativo: cada proyecto se cuenta en tres pasos (el reto, qué hice, qué tiene ahora) mientras la captura se queda fija y cambia | `02-scroll-narrativo.html` | ✅ **Aprobado para pasar a la web** (29/10/2026) |
-| 03 | Proyectos en 3D: carrusel en profundidad que se desliza con el dedo, el ratón o las flechas; cada tarjeta se gira para contar el reto, qué hice y qué tiene ahora | `03-proyectos-3d.html` | 🧪 En prueba |
+| 03 | Proyectos en 3D: carrusel en profundidad que se desliza con el dedo, el ratón o las flechas; cada tarjeta se gira para contar el reto, qué hice y qué tiene ahora | `03-proyectos-3d.html` | ❓ En duda: le gusta, pero menos que el 02 (29/10/2026) |
 | 04 | Cursor y microinteracciones: cursor propio, botones imán, tarjetas con brillo e inclinación, ondas al pulsar | `04-cursor-microinteracciones.html` | ⏸️ Aparcado: Ismael lo revisará en el ordenador (29/10/2026) |
+| 05 | Modo claro y oscuro: interruptor animado (luna y sol), la página cambia con un círculo que se abre desde el botón; usa el modo del dispositivo y recuerda la elección | `05-modo-claro-oscuro.html` | 🧪 En prueba |
 
-Experimentos propuestos que aún no se han hecho: 05 modo claro/oscuro, 06 asistente simulado.
+Experimentos propuestos que aún no se han hecho: 06 asistente simulado.
 
 ## Al pasar algo aprobado a la web
 
