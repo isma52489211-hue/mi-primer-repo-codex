@@ -332,7 +332,7 @@ html:not(.js) .story-review,html:not(.js) .story-tags.t3 span{opacity:1;transfor
 .reply-note{display:flex;align-items:center;gap:8px;font-size:13px;color:#c3bdcc;margin:14px 0 0}
 .reply-note .dot{width:7px;height:7px;border-radius:50%;background:#a3d8bb;box-shadow:0 0 0 3px #a3d8bb2e;flex:none}
 .hero-cine .reply-note{margin-top:16px}
-.home-close-actions .reply-note{flex-basis:100%;margin-top:2px}
+.home-close-actions .reply-note{flex-basis:100%;width:0;min-width:100%;margin-top:2px}
 .story-cta{margin-top:12px}
 .story-cta .button{margin-top:0}
 .footer-contact{display:flex;flex-wrap:wrap;gap:6px 20px}
@@ -355,3 +355,44 @@ html:not(.js) .story-review,html:not(.js) .story-tags.t3 span{opacity:1;transfor
   .wa-bar+footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 }
 @media(prefers-reduced-motion:reduce){.wa-bar,.wa-bar.is-hidden{transition:none}}
+/* ===== Cimientos: escala de texto, botones, esquinas y respuesta al tacto (fase A de la auditoría de diseño) =====
+   "html:not(#_)" no cambia a qué afecta la regla: solo le da más peso que a cualquier regla anterior,
+   para que esta capa mande sin tener que tocar las decenas de tamaños repartidos por el archivo. */
+:root{--fs-label:12px;--fs-meta:14px;--fs-small:15px;--fs-body:16px;--fs-lead:18px;--lh-body:1.65;--r-sm:12px;--r-md:20px;--r-lg:24px;--measure:68ch}
+html{-webkit-tap-highlight-color:#b497ff33}
+
+/* Texto de lectura: nunca por debajo de 16 px. Las etiquetas (eyebrow, tags, chips) conservan su tamaño. */
+html:not(#_) main :is(p,li,dd,summary,blockquote):not(.eyebrow,.tag,.number,.story-k,.reply-note,.story-note,.portfolio-domain,.status):not(:is(.chips,.hero-chips,.steps-inline,.story-tags,.legal-jumps) *){font-size:var(--fs-body);line-height:var(--lh-body)}
+html:not(#_) main :is(.project-note p,.group-purpose p,.legal-block p){max-width:var(--measure)}
+/* Entradillas de cada sección */
+html:not(#_) main :is(.section-head>p,.hero-cine .intro,.portfolio-position,.about-intro-copy>p:not(.eyebrow):first-of-type,.page-intro){font-size:17px;line-height:1.6}
+@media(min-width:761px){html:not(#_) main :is(.section-head>p,.hero-cine .intro,.portfolio-position,.about-intro-copy>p:not(.eyebrow):first-of-type,.page-intro){font-size:var(--fs-lead)}}
+/* Texto secundario (cajas de detalle, notas): 15 px */
+html:not(#_) main :is(.service-check p,.project-note p,.group-purpose p,.portfolio-takeaway p,.story-note,.reply-note,.contact-person p,.services-contact-note,figcaption){font-size:var(--fs-small);line-height:1.55}
+html:not(#_) main :is(.service-check h4,.project-note strong){font-size:15px}
+/* Nombre de cada herramienta: por encima de su descripción */
+html:not(#_) main .glow-card dt{font-size:17px}
+/* Accesos rápidos, descripciones de grupo y notas que se quedaban en 12 px */
+html:not(#_) main :is(.service-shortcuts a,.tools-jumps a,.project-jumps a,.service-proof a,.group-heading span,.tools-learning-note){font-size:var(--fs-meta)}
+html:not(#_) main :is(.section-head>p,.portfolio-position,.about-intro-copy>p){max-width:36em}
+/* Enlaces de texto, menú y pie */
+html:not(#_) :is(.text-link,.service-link){font-size:var(--fs-meta)}
+html:not(#_) .main-nav>a{font-size:var(--fs-meta)}
+@media(max-width:1050px){html:not(#_) .main-nav>a{font-size:var(--fs-body)}}
+html:not(#_) footer>p,html:not(#_) :is(.footer-links,.footer-contact) a{font-size:var(--fs-meta)}
+
+/* Botones: redondeados, como los aprobados en el laboratorio, y más fáciles de pulsar */
+html:not(#_) .button{border-radius:999px;min-height:48px;padding:12px 24px;font-size:15px;font-weight:650;gap:12px;line-height:1.2;transition:background .2s,transform .15s}
+html:not(#_) .nav-contact{border-radius:999px}
+
+/* Esquinas: tres medidas en toda la web */
+html:not(#_) :is(.glow-card,.bento-tile,.home-project,.contact-channel,.story-frame,.story-card,.tool-group){border-radius:var(--r-md)}
+html:not(#_) :is(.contact.section){border-radius:var(--r-lg)}
+html:not(#_) :is(.service-check,.project-note,.icon-tile,.story-review){border-radius:var(--r-sm)}
+
+/* Cabecera del móvil más baja: más pantalla para el contenido */
+@media(max-width:1050px){html:not(#_) .site-header .header{min-height:64px;padding-block:10px}}
+
+/* Respuesta al tocar en pantallas táctiles */
+@media(hover:none){html:not(#_) .button:active,html:not(#_) .wa-bar-link:active{transform:scale(.97);filter:brightness(1.06)}}
+@media(prefers-reduced-motion:reduce){html:not(#_) .button,html:not(#_) .button:active,html:not(#_) .wa-bar-link:active{transition:none;transform:none}}
