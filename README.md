@@ -102,6 +102,18 @@ Auditoría de Inicio hecha (primera de la revisión página a página). En ella 
 
 Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
 
+## Cimientos de diseño (fase A de la auditoría de diseño y experiencia)
+
+Auditoría del 10/11/2026: el texto de lectura iba a 13–14 px (en Herramientas el 66 % del texto era de 12–13 px), cada página usaba 10–14 tamaños de letra y 6–8 redondeos de esquina, los botones eran casi cuadrados frente a etiquetas y tarjetas redondeadas, y en móvil nada respondía al tocar. Capa "Cimientos" al final de `styles.css` (el prefijo `html:not(#_)` solo le da peso para mandar sobre las reglas anteriores):
+
+- **Texto**: lectura a 16 px (entradillas a 17–18 px, notas a 15 px, enlaces, menú y pie a 14 px); las etiquetas en mayúsculas siguen a 12 px. Texto de 12–13 px: Herramientas del 66 % al 20 %, Inicio del 49 % al 22 %, Servicios del 30 % al 9 %.
+- **Botones** redondeados (como los aprobados en el laboratorio), de 48 px de alto y 15 px de letra.
+- **Esquinas**: tres medidas (12 px detalles, 20 px tarjetas, 24 px bloques de cierre) y píldoras.
+- **Ancho de línea** limitado en los textos que pasaban de ~75 caracteres en ordenador.
+- **Móvil**: cabecera de 78 a 64 px y respuesta al tocar (resaltado del enlace y botones que se hunden un poco; sin movimiento con "reducir movimiento").
+
+Siguientes fases acordadas: B) Servicios más visual, C) movimiento coherente en el resto de páginas, D) Inicio reordenada, E) Herramientas y Sobre mí más condensadas.
+
 ## Contacto siempre a mano (auditoría de conversión, tanda 1)
 
 Auditoría del 10/11/2026 con un objetivo: que quien visite la web escriba. En móvil había hasta 10,5 pantallas seguidas sin ningún botón de contacto (Proyectos) y "Contacto" quedaba escondido en el menú. Cambios:
