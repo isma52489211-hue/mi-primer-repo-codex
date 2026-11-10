@@ -114,6 +114,18 @@
     }, { passive: true });
   }
 
+  // Barra de WhatsApp en móvil: se aparta cuando ya hay otro botón de contacto a la vista.
+  const waBar = document.querySelector('.wa-bar');
+  if (waBar) {
+    const targets = [...document.querySelectorAll('main a[href*="wa.me"], main a[href="contacto.html"].button, footer .footer-contact a')];
+    const onScreen = new Set();
+    const watch = new IntersectionObserver(entries => {
+      for (const entry of entries) entry.isIntersecting ? onScreen.add(entry.target) : onScreen.delete(entry.target);
+      waBar.classList.toggle('is-hidden', onScreen.size > 0);
+    }, { rootMargin: '0px 0px -90px 0px' }); // un botón tapado por la propia barra no cuenta
+    targets.forEach(t => watch.observe(t));
+  }
+
   // Proyectos: cada historia avanza (reto, qué hice, qué tiene ahora) según el paso que cruza el centro de la pantalla.
   const chapters = [...document.querySelectorAll('.story-chapter')];
   if (chapters.length) {
