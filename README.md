@@ -102,6 +102,18 @@ Auditoría de Inicio hecha (primera de la revisión página a página). En ella 
 
 Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
 
+## Contacto siempre a mano (auditoría de conversión, tanda 1)
+
+Auditoría del 10/11/2026 con un objetivo: que quien visite la web escriba. En móvil había hasta 10,5 pantallas seguidas sin ningún botón de contacto (Proyectos) y "Contacto" quedaba escondido en el menú. Cambios:
+
+- **Barra fija de WhatsApp** en móvil y tablet (hasta 1050 px), en todas las páginas: "Escríbeme por WhatsApp · Te respondo en menos de 24 horas". Se aparta sola cuando ya hay otro botón de contacto a la vista y deja hueco al final de la página. Comprobado: ningún tramo de ninguna página queda sin contacto a la vista.
+- **Proyectos**: al acabar cada historia, botón "Quiero algo así para mi negocio" (o "Quiero una herramienta así" en la app) que abre WhatsApp con un mensaje sobre ese proyecto; el enlace al servicio queda debajo.
+- **Mensajes de WhatsApp según la página**, para saber de dónde viene cada contacto sin instalar nada: Inicio y aviso legal "vengo de tu web…", Servicios "he visto tus servicios…" (los de cada servicio siguen siendo los suyos), Proyectos "he visto tus proyectos…" o el del proyecto concreto, Herramientas "he visto las herramientas con las que trabajas…", Sobre mí "he leído sobre ti en tu web…". Contacto mantiene el mensaje con las tres preguntas.
+- **"Te respondo yo, en menos de 24 horas"** junto a los botones de la portada, de los cierres y de cada proyecto.
+- **Pie de página** con WhatsApp, teléfono y correo en todas las páginas, y la frase "Webs, contenido, herramientas e IA para pequeños negocios." en lugar de "Aprendiendo con cada proyecto".
+
+Pendiente (tanda 2, necesita datos de Ismael): si la primera conversación es gratis y sin compromiso, zona y forma de trabajo (en persona o videollamada), una opinión real de María Flores y, opcionalmente, un precio orientativo. Tanda 3 (laboratorio): reordenar Inicio para que lleve antes al contacto y el diagnóstico de tres preguntas que termina en WhatsApp.
+
 ## Estilo unificado
 
 El resto de páginas comparte el lenguaje visual de la portada: la parte destacada de cada título principal y de los títulos de cierre lleva el degradado morado, turquesa y coral; todas tienen el fondo vivo (más suave que en Inicio); los accesos rápidos internos son pastillas translúcidas con brillo al pasar el ratón; y los bloques de cierre de cada página tienen fondo de color y bordes redondeados. En Contacto, una foto pequeña de Ismael acompaña al título ("Te responde Ismael").
