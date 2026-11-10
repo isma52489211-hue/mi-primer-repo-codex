@@ -332,6 +332,7 @@ html:not(.js) .story-review,html:not(.js) .story-tags.t3 span{opacity:1;transfor
 .reply-note{display:flex;align-items:center;gap:8px;font-size:13px;color:#c3bdcc;margin:14px 0 0}
 .reply-note .dot{width:7px;height:7px;border-radius:50%;background:#a3d8bb;box-shadow:0 0 0 3px #a3d8bb2e;flex:none}
 .hero-cine .reply-note{margin-top:16px}
+.home-close-actions .reply-note{flex-basis:100%;margin-top:2px}
 .story-cta{margin-top:12px}
 .story-cta .button{margin-top:0}
 .footer-contact{display:flex;flex-wrap:wrap;gap:6px 20px}
