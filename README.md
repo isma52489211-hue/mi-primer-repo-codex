@@ -102,6 +102,16 @@ Auditoría de Inicio hecha (primera de la revisión página a página). En ella 
 
 Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
 
+## Servicios visual (fase B de la auditoría de diseño y experiencia)
+
+Servicios era un muro de texto: 11–12 pantallas de móvil con cuatro bloques casi iguales y ninguna imagen. Ahora:
+
+- **"¿Te suena alguna de estas frases?"**: cuatro tarjetas con la frase de ejemplo de cada servicio que llevan a su bloque; en móvil, carrusel que se desliza con el dedo.
+- **Cada servicio** con imagen (capturas reales de María Flores PNI, Pescaderías Adolfo y Pescadería Contable; en contenido y en IA, un icono grande decorativo, sin capturas inventadas), alternando lado en ordenador, y "Qué incluye" como etiquetas cortas. El detalle completo y "Cómo lo comprobamos" se despliegan en "Qué incluye en detalle y cómo lo comprobamos". Botón de WhatsApp de cada servicio y enlaces a proyectos reales se mantienen.
+- **Método** compacto en móvil (icono a la izquierda, texto a la derecha).
+- Se mantienen los anclajes `#web`, `#documentos`, `#apps`, `#ia`, `#metodo` y `#preguntas`.
+- Resultado: de 12 a 9 pantallas en móvil. Se quitaron los estilos del diseño anterior (35 selectores, de 72 a 69 KB) con comparación de capturas.
+
 ## Cimientos de diseño (fase A de la auditoría de diseño y experiencia)
 
 Auditoría del 10/11/2026: el texto de lectura iba a 13–14 px (en Herramientas el 66 % del texto era de 12–13 px), cada página usaba 10–14 tamaños de letra y 6–8 redondeos de esquina, los botones eran casi cuadrados frente a etiquetas y tarjetas redondeadas, y en móvil nada respondía al tocar. Capa "Cimientos" al final de `styles.css` (el prefijo `html:not(#_)` solo le da peso para mandar sobre las reglas anteriores):
