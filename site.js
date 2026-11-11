@@ -114,6 +114,42 @@
     }, { passive: true });
   }
 
+  // Entrada de las páginas interiores: cada línea del título se anima por separado (el texto no cambia).
+  if (document.body.dataset.page !== 'inicio') {
+    const title = document.querySelector('main .page-title');
+    if (title && !title.querySelector('.ln')) {
+      const lines = [[]];
+      [...title.childNodes].forEach(node => node.nodeName === 'BR' ? lines.push([]) : lines[lines.length - 1].push(node));
+      title.textContent = '';
+      lines.forEach((nodes, i) => {
+        const line = document.createElement('span');
+        line.className = 'ln';
+        line.style.setProperty('--i', i);
+        nodes.forEach(n => line.appendChild(n));
+        if (i) title.appendChild(document.createElement('br'));
+        title.appendChild(line);
+      });
+    }
+  }
+
+  // Cabecera del móvil: se esconde al bajar y vuelve al subir, al tocar el menú o al usar el teclado.
+  {
+    const root = document.documentElement;
+    let lastY = window.scrollY, ticking = false;
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY;
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      if (!mobile.matches || open || y < 80 || header.contains(document.activeElement)) root.classList.remove('header-hidden');
+      else if (y > lastY + 6) root.classList.add('header-hidden');
+      else if (y < lastY - 6) root.classList.remove('header-hidden');
+      if (Math.abs(y - lastY) > 6) lastY = y;
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    header.addEventListener('focusin', () => root.classList.remove('header-hidden'));
+    mobile.addEventListener('change', update);
+  }
+
   // Barra de WhatsApp en móvil: se aparta cuando ya hay otro botón de contacto a la vista.
   const waBar = document.querySelector('.wa-bar');
   if (waBar) {
