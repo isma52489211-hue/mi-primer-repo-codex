@@ -490,3 +490,22 @@ html:not(#_) .page-title .ln{background:none;color:var(--ink);-webkit-text-fill-
   .header-hidden .story-visual{top:0}
 }
 @media(prefers-reduced-motion:reduce){.site-header,.story-visual{transition:none}}
+/* ===== Inicio reordenada (fase D de la auditoría de diseño): servicios, proyectos, por qué conmigo y cierre ===== */
+.home-services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:44px}
+.home-services .bento-tile{min-height:250px}
+.bento-iaserv{background:radial-gradient(80% 70% at 0% 0%,#b497ff38,transparent 60%),radial-gradient(70% 60% at 100% 100%,#ff9d8a1f,transparent 60%),linear-gradient(160deg,#1d1626,#131118 72%)}
+/* Por qué conmigo: la tarjeta grande a la izquierda; herramientas arriba a la derecha; máster y método debajo */
+html:not(#_) .home-why .bento{grid-auto-rows:minmax(200px,auto)}
+html:not(#_) .home-why .bento-herramientas{grid-column:span 2}
+html:not(#_) .home-why .bento-metodo{grid-column:span 1}
+html:not(#_) .home-why .steps-inline{flex-wrap:wrap}
+@media(max-width:1050px){
+  .home-services{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html:not(#_) .home-why .bento-ia{grid-column:span 2}
+  html:not(#_) .home-why .bento-herramientas{grid-column:span 2}
+}
+@media(max-width:760px){
+  .home-services{grid-template-columns:1fr;gap:14px;margin-top:32px}
+  .home-services .bento-tile{min-height:0}
+  html:not(#_) .home-why .bento-ia,html:not(#_) .home-why .bento-herramientas,html:not(#_) .home-why .bento-metodo{grid-column:auto}
+}

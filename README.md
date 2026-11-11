@@ -102,6 +102,16 @@ Auditoría de Inicio hecha (primera de la revisión página a página). En ella 
 
 Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
 
+## Inicio reordenada (fase D de la auditoría de diseño y experiencia)
+
+Antes, entre la portada y los proyectos había siete bloques mezclados (tres servicios y cuatro sobre Ismael: enfoque, máster, herramientas y método). Ahora Inicio sigue el orden de una decisión: qué necesito, prueba de que lo hace, por qué él, contacto.
+
+1. Portada (sin cambios).
+2. **Cómo puedo ayudarte**: los cuatro servicios en tarjetas iguales, incluido "04 / Asistentes con IA", que antes no aparecía en Inicio (enlaza a `servicios.html#ia`).
+3. **Proyectos destacados**, justo después de los servicios: en móvil empiezan en la pantalla 3,6 en lugar de la 5,1.
+4. **Por qué conmigo · Alguien que entiende tu negocio**: la tarjeta grande "Experiencia de negocio. Herramientas de IA." con herramientas, máster y método. Se quita el enlace repetido al método.
+5. Cierre con WhatsApp.
+
 ## Movimiento coherente (fase C de la auditoría de diseño y experiencia)
 
 - **Entrada de las páginas interiores** con el estilo de la portada: el título aparece línea a línea (de borroso a nítido) y después la entradilla y lo que la sigue. `site.js` separa las líneas del título en `.ln` al cargar; el texto y su lectura con lector de pantalla no cambian, y sin JavaScript se ve igual que antes. Las líneas no heredan el degradado: solo la parte destacada lo lleva.
