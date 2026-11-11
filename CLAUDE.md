@@ -26,7 +26,7 @@ Web personal y portfolio de Ismael (marca "ISMAEL · IA APLICADA"): soluciones d
 
 ## Estructura
 
-- Páginas de trabajo en la raíz: `index.html`, `servicios.html`, `proyectos.html`, `herramientas.html`, `sobre-mi.html`, `contacto.html`, `aviso-legal.html`, más `styles.css` y `site.js`. No hay frameworks ni dependencias.
+- Páginas de trabajo en la raíz: `index.html`, `servicios.html`, `proyectos.html`, `herramientas.html`, `sobre-mi.html`, `contacto.html`, `aviso-legal.html`, más `styles.css` y `site.js`. No hay frameworks ni dependencias. El menú tiene cinco opciones (Inicio, Servicios, Proyectos, Sobre mí, Contacto): Herramientas no está en el menú y se enlaza desde el pie, Sobre mí, Servicios e Inicio.
 - `docs/` se genera con `python3 scripts/build.py`: nunca se edita a mano.
 - `scripts/build.py`: valida enlaces, anclas, imágenes, un solo `h1` por página y que no haya "PENDIENTE"; copia los archivos públicos (lista `PAGES` y `ASSETS`) a `docs/`, añade huella de versión a `styles.css` y `site.js` y genera `sitemap.xml`. Cada archivo nuevo publicable se añade a `ASSETS` y a la lista de `scripts/publish.sh`.
 - `scripts/preview.py`: vista previa en http://localhost:8000.
