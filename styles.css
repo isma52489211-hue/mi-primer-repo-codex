@@ -362,7 +362,7 @@ html:not(.js) .story-review,html:not(.js) .story-tags.t3 span{opacity:1;transfor
 html{-webkit-tap-highlight-color:#b497ff33}
 
 /* Texto de lectura: nunca por debajo de 16 px. Las etiquetas (eyebrow, tags, chips) conservan su tamaño. */
-html:not(#_) main :is(p,li,dd,summary,blockquote):not(.eyebrow,.tag,.number,.story-k,.reply-note,.story-note,.status):not(:is(.chips,.hero-chips,.steps-inline,.story-tags,.legal-jumps,.svc-chips) *){font-size:var(--fs-body);line-height:var(--lh-body)}
+html:not(#_) main :is(p,li,dd,summary,blockquote):not(.eyebrow,.tag,.number,.story-k,.reply-note,.story-note,.status,.statement-words):not(:is(.chips,.hero-chips,.steps-inline,.story-tags,.legal-jumps,.svc-chips,.tool-chips) *){font-size:var(--fs-body);line-height:var(--lh-body)}
 html:not(#_) main :is(.project-note p,.group-purpose p,.legal-block p){max-width:var(--measure)}
 /* Entradillas de cada sección */
 html:not(#_) main :is(.section-head>p,.hero-cine .intro,.portfolio-position,.about-intro-copy>p:not(.eyebrow):first-of-type){font-size:17px;line-height:1.6}
@@ -508,4 +508,24 @@ html:not(#_) .home-why .steps-inline{flex-wrap:wrap}
   .home-services{grid-template-columns:1fr;gap:14px;margin-top:32px}
   .home-services .bento-tile{min-height:0}
   html:not(#_) .home-why .bento-ia,html:not(#_) .home-why .bento-herramientas,html:not(#_) .home-why .bento-metodo{grid-column:auto}
+}
+/* ===== Sobre mí condensada y "Con qué trabajo" (fase E de la auditoría de diseño) ===== */
+html:not(#_) .about-building{display:block}
+html:not(#_) .about-gains{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 40px;margin-top:28px;padding:0;list-style:none}
+html:not(#_) .about-gains li{margin:0;padding:18px 0 0 22px;border-top:1px solid var(--line)}
+html:not(#_) .about-gains li::before{top:27px}
+.about-tools-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:20px;margin-top:34px;align-items:stretch}
+.about-levels{display:flex;flex-direction:column;gap:22px;padding:28px;border:1px solid var(--line);border-radius:var(--r-md);background:linear-gradient(160deg,#1b1623,#131118 72%)}
+.about-level h3{display:flex;align-items:center;gap:10px;font-size:15px;letter-spacing:0;margin:0 0 12px;color:#e6e0ee}
+.about-level .level-dot{width:9px;height:9px}
+.tool-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+html:not(#_) .tool-chips li{font-size:14px;line-height:1.3;padding:7px 13px;border-radius:999px;border:1px solid #ffffff1f;background:#ffffff0a;color:#e6e0ee}
+.about-levels .service-link{margin-top:auto}
+html:not(#_) .about-tools-grid .about-learning{border-radius:var(--r-md);display:flex;flex-direction:column;align-items:start}
+@media(max-width:860px){.about-tools-grid{grid-template-columns:1fr}}
+@media(max-width:760px){
+  html:not(#_) .about-gains{grid-template-columns:1fr;gap:12px}
+  .about-levels{padding:22px 18px;gap:18px}
+  html:not(#_) .tool-chips{gap:6px}
+  html:not(#_) .tool-chips li{font-size:13px;padding:6px 10px}
 }

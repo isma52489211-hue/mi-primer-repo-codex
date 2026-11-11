@@ -102,6 +102,14 @@ Auditoría de Inicio hecha (primera de la revisión página a página). En ella 
 
 Experimento 02 del laboratorio, aprobado el 29/10/2026. Cada proyecto (María Flores PNI, Pescaderías Adolfo y Pescadería Contable) se cuenta en tres pasos: "El reto", "Qué hice" y "Qué tiene ahora". Mientras se baja, la captura se queda fija (en móvil, arriba de la pantalla, bajo la cabecera) y cambia con cada paso: en el reto se ve apagada con la necesidad del cliente delante; en "Qué hice" aparecen etiquetas con lo que se hizo; en "Qué tiene ahora", etiquetas verdes con el resultado, la valoración real de Google en Adolfo y la pantalla de cierre en la app. Una barra de colores arriba marca lo leído y el número de cada proyecto se rellena al avanzar. En móvil, cada paso se activa en el centro del hueco que deja la captura fija, para que su tarjeta no quede tapada. Sin JavaScript se ve la captura limpia. Con "reducir movimiento" los cambios son instantáneos. Se mantienen los enlaces `#webs`, `#adolfo`, `#pescaderia` y `#como-funciona`, y siguen "Cómo funciona", la nota, las preguntas y el cierre.
 
+## Sobre mí condensada y Herramientas fuera del menú (fase E de la auditoría de diseño y experiencia)
+
+Decisión de Ismael (11/11/2026): Herramientas sale del menú, que queda en cinco opciones (Inicio, Servicios, Proyectos, Sobre mí, Contacto). La página `herramientas.html` sigue publicada con todo su detalle y se enlaza desde el pie de las 7 páginas ("Herramientas y niveles"), desde Sobre mí, Servicios e Inicio.
+
+- **Sobre mí**: "Qué guía mi trabajo" (tres principios) se funde con "Qué ganas trabajando conmigo", que ya recogía esas ideas (primera versión pronto, costes claros, probar con casos reales); las cuatro ventajas van en dos columnas en ordenador.
+- **Nueva sección "Con qué trabajo"** en Sobre mí: las herramientas agrupadas por los mismos niveles que la página Herramientas (experiencia práctica; uso acotado o con apoyo: Vercel, GitHub, Hostinger; formación en curso: Make, n8n, Gemini de uso personal), junto a la tarjeta del máster, con enlace a cada herramienta en detalle.
+- Corrección de la fase A: la frase "Sencilla. Útil. Con sentido de negocio." había quedado a 16 px; vuelve a su tamaño grande.
+
 ## Inicio reordenada (fase D de la auditoría de diseño y experiencia)
 
 Antes, entre la portada y los proyectos había siete bloques mezclados (tres servicios y cuatro sobre Ismael: enfoque, máster, herramientas y método). Ahora Inicio sigue el orden de una decisión: qué necesito, prueba de que lo hace, por qué él, contacto.
