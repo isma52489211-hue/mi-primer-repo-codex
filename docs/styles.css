@@ -472,3 +472,21 @@ html:not(#_) .svc-proof a{display:inline-flex;align-items:center;gap:8px;min-hei
   html:not(#_) .services-method .method-steps li>span:not(.icon-tile){grid-column:2;padding-top:0}
   html:not(#_) .services-method .method-steps li>div{grid-column:2}
 }
+/* ===== Movimiento coherente (fase C de la auditoría de diseño) ===== */
+/* Entrada de las páginas interiores: el título aparece línea a línea, como en la portada */
+@media(prefers-reduced-motion:no-preference){
+  .js body:not([data-page="inicio"]) .page-title .ln{display:inline-block;animation:hero-word .9s cubic-bezier(.2,.75,.15,1) both;animation-delay:calc(var(--i) * 110ms + 120ms)}
+  .js body:not([data-page="inicio"]) main>section:first-of-type>.eyebrow{animation:hero-up .7s cubic-bezier(.2,.75,.15,1) both}
+  .js body:not([data-page="inicio"]) main>section:first-of-type :is(.section-head>:not(h1),.section-head+*,.page-title~*,.about-intro-copy>:not(h1):not(.eyebrow)){animation:hero-up .9s .5s cubic-bezier(.2,.75,.15,1) both}
+  .js body:not([data-page="inicio"]) .page-title{perspective:600px}
+}
+/* Las líneas no heredan el degradado ni el morado de las partes destacadas del título: solo su parte destacada lo lleva */
+html:not(#_) .page-title .ln{background:none;color:var(--ink);-webkit-text-fill-color:currentColor}
+/* Cabecera del móvil: se aparta al bajar y vuelve al subir */
+@media(max-width:1050px){
+  .site-header{transition:transform .3s cubic-bezier(.2,.75,.15,1)}
+  .header-hidden .site-header{transform:translateY(-100%)}
+  .story-visual{transition:top .3s cubic-bezier(.2,.75,.15,1)}
+  .header-hidden .story-visual{top:0}
+}
+@media(prefers-reduced-motion:reduce){.site-header,.story-visual{transition:none}}
